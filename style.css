@@ -269,7 +269,7 @@ li a{
 }
 
 }
-@media screen and (max-width: 345px){
+@media screen and (max-width: 400px){
   body {
     overflow-x: hidden;
   }

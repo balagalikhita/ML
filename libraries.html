@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libraries.css">
+    <link rel="stylesheet" href="style1.css">
+    <title>Libraries</title>
+</head>
+
+<body>
+    <div class="menu">
+        <h2 id="logo">Machine Learning</h2>
+    </div>
+    <div class="main">
+        <div class="menu">
+            <h2 id="logo">Machine Learning</h2>
+            <a href="#numpy">NumPy</a>
+            <a href="#pandas">Pandas</a>
+
+            <a href="#matplotlib">Matplotlib</a>
+
+            <a href="#sciPy">SciPy</a>
+            <a href="#scikit-learn">Scikit-learn</a>
+            <a href="#naturalLanguageToolKit">Natural Language Tool Kit</a>
+
+            <a href="#tensorflow">TensorFlow</a>
+            <a href="#keras">Keras</a>
+        </div>
+        <div class="sidebody">
+            <img src="images/logo.png" id="lo">
+            <a href="index.html">Back to Home</a>
+            <div id="title" style="position: relative;
+            left: 226px;">MACHINE LEARNING LIBRARIES</div>
+            </br>
+            <div id="numpy">
+                <h3>Numpy</h3>
+                <p>NumPy is the most popular library in Python. This library is used for processing large
+                    multi-dimensional array and matrix formation by using a large collection of high-level mathematical
+                    functions and formulas.</p>
+                <p>It is mainly used for the computation of fundamental science in machine learning.</p>
+                <p>It is widely used for linear algebra, Fourier transformation, and random number capabilities.</p>
+                </br>
+                <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+            position: relative;
+            left: -7px;">
+                    <p>import numpy as nup </p>
+                    <p># Then, create two arrays of rank 2 </p>
+                    <p>K = nup.array([[2, 4], [6, 8]]) </p>
+                    <p>R = nup.array([[1, 3], [5, 7]]) </p>
+                    <p># Then, create two arrays of rank 1 </p>
+                    <p>P = nup.array([10, 12]) </p>
+                    <p>S = nup.array([9, 11]) </p>
+                    <p># Then, we will print the Inner product of vectors </p>
+                    <p>print ("Inner product of vectors: ", nup.dot(P, S), "\n") </p>
+                    <p># Then, we will print the Matrix and Vector product </p>
+                    <p>print ("Matrix and Vector product: ", nup.dot(K, P), "\n") </p>
+                    <p># Now, we will print the Matrix and matrix product </p>
+                    <p>print ("Matrix and matrix product: ", nup.dot(K, R)) </p>
+                </div>
+                </br>
+                <h2 class="code" style="left: 121px;">OUTPUT</h2>
+                <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                position: relative;
+                left: -7px; height:93px;">
+                    <p>Inner product of vectors: 222 </p>
+
+                    <p>Matrix and Vector product: [ 68 156] </p>
+
+                    <p>Matrix and matrix product: [[22 34] [46 74]]</p>
+                </div>
+            
+            </div>
+            <img style="position: absolute;
+            right: 200px;
+            top: 73px;" src="images/numpy.jpg" alt="">
+         
+            </br>
+            <div id="pandas">
+                <h3>Pandas</h3>
+                <p>Pandas is a Python library that is mainly used for data analysis. The users have to prepare the
+                    dataset before using it for training the machine learning.</p>
+                <p>Pandas make it easy for the developers as it is developed specifically for data extraction.</p>
+                <p>It has a wide variety of tools for analysing data in detail, providing high-level data structures.
+                </p>
+                </br>
+                <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                position: relative;
+                left: -7px;">
+                    <p>import pandas as pad</p>
+
+                    <p>data_1 = {"Countries": ["Bhutan", "Cape Verde", "Chad", "Estonia", "Guinea", "Kenya", "Libya",
+                        "Mexico"],</p>
+                    <p>"capital": ["Thimphu", "Praia", "N'Djamena", "Tallinn", "Conakry", "Nairobi", "Tripoli", "Mexico
+                        City"],</p>
+                    <p>"Currency": ["Ngultrum", "Cape Verdean escudo", "CFA Franc", "Estonia Kroon; Euro", "Guinean
+                        franc",
+                        "Kenya shilling", "Libyan dinar", "Mexican peso"],</p>
+                    <p>"population": [20.4, 143.5, 12.52, 135.7, 52.98, 76.21, 34.28, 54.32] }</p>
+
+                    <p>data_1_table = pad.DataFrame(data_1)</p>
+                    <p>print(data_1_table)</p>
+                </div>
+                </br>
+                <h2 class="code" style="left: 121px;">OUTPUT</h2>
+                <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                position: relative;
+                left: -7px;">
+                    <p> Countries capital Currency population</p>
+                    <p>0 Bhutan Thimphu Ngultrum 20.40</p>
+                    <p>1 Cape Verde Praia Cape Verdean escudo 143.50</p>
+                    <p>2 Chad N'Djamena CFA Franc 12.52</p>
+                    <p>3 Estonia Tallinn Estonia Kroon; Euro 135.70</p>
+                    <p>4 Guinea Conakry Guinean franc 52.98</p>
+                    <p>5 Kenya Nairobi Kenya shilling 76.21</p>
+                    <p>6 Libya Tripoli Libyan dinar 34.28</p>
+                    <p>7 Mexico Mexico City Mexican peso 54.32</p>
+                </div>
+            </div>
+            <img style="position: absolute;
+            top: 619px;" src="images/pandas.jpg" alt="">
+        </br>
+            <div id="matplotlib">
+                <h3>Matplotlib</h3>
+                <p>Matplotlib is a Python library that is used for data visualization.</p>
+                <p>It is used by developers when they
+                    want to visualize the data and its patterns.</p>
+                <p>It is a 2-D plotting library that is used to create 2-D
+                    graphs and plots.</p>
+                <p>It has a module pyplot which is used for plotting graphs, and it provides different features for
+                    control
+                    line styles, font properties, formatting axes and many more. </p>
+                <p>Matplotlib provides different types of
+                    graphs and plots such as histograms, error charts, bar charts and many more.</p>
+                </br>
+                <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+position: relative;
+left: -7px;">
+                    <p> import matplotlib.pyplot as plot</p>
+                    <p> import numpy as nup</p>
+                    <p># Prepare the data</p>
+                    <p> K = nup.linspace(2, 4, 8)</p>
+                    <p> R = nup.linspace(5, 7, 9)</p>
+                    <p>Q = nup.linspace(0, 1, 3)</p>
+                    <p># Plot the data</p>
+                    <p>plot.plot(K, K, label = 'K')</p>
+                    <p> plot.plot(R, R, label = 'R')</p>
+                    <p> plot.plot(Q, Q, label = 'Q')</p>
+                    <p># Add a legend</p>
+                    <p>plot.legend()</p>
+
+                    <p># Show the plot</p>
+                    <p>plot.show()</p>
+
+                </div>
+                </br>
+                <h2 class="code" style="left: 121px;">OUTPUT</h2>
+                <div class="img" style="position: relative;
+                left: 134px;">
+                    <img src="images/op.jpg" alt="">
+                </div>
+
+            </div>
+<img style="position: absolute;
+left: 950px;
+top: 1119px;
+width: 500px;" src="images/mat.jpg" alt="">
+        </br>
+            <div id="sciPy">
+                <h3>SciPy</h3>
+                <p>SciPy is a popular library among Machine Learning developers as it contains numerous modules for
+                    performing optimization, linear algebra, integration, and statistics.</p>
+                <p>SciPy library is different from SciPy stack, as SciPy library is one of the core packages which made
+                    up the SciPy stack. </p>
+                <p>SciPy library is used for image manipulation tasks.</p>
+                </br>
+                <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                position: relative;
+                left: -7px;">
+                    <p>>from scipy import signal as sg </p>
+                    <p>>import numpy as nup </p>
+                    <p>>K = nup.arange(45).reshape(9, 5) </p>
+                    <p>>domain_1 = nup.identity(3) </p>
+                    <p>>print (K, end = 'KK') </p>
+                    <p>>print (sg.order_filter (K, domain_1, 1)) </p>
+
+                </div>
+                <h2 class="code" style="left: 121px;">OUTPUT</h2>
+                <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+            position: relative;
+            left: -7px;">
+                    <p>r (K, domain_1, 1)</p>
+                    <p> Output:</p>
+                    <p> [[ 0 1 2 3 4]</p>
+                    <p> [ 5 6 7 8 9]</p>
+                    <p> [10 11 12 13 14]</p>
+                    <p> [15 16 17 18 19]</p>
+                    <p> [20 21 22 23 24]</p>
+                    <p> [25 26 27 28 29]</p>
+                    <p> [30 31 32 33 34]</p>
+                    <p> [35 36 37 38 39]</p>
+                    <p> [40 41 42 43 44]] </p>
+                    <p>KK [[ 0. 1. 2. 3. 0.]</p>
+                    <p> [ 5. 6. 7. 8. 3.]</p>
+                    <p> [10. 11. 12. 13. 8.]</p>
+                    <p> [15. 16. 17. 18. 13.]</p>
+                    <p> [20. 21. 22. 23. 18.]</p>
+                    <p> [25. 26. 27. 28. 23.]</p>
+                    <p> [30. 31. 32. 33. 28.]</p>
+                    <p> [35. 36. 37. 38. 33.]</p>
+                    <p> [ 0. 35. 36. 37. 38.]]</p>
+
+                </div>
+            </div>
+        <img style="position: absolute;
+        left: 264px;
+        top: 1801px;" src="images/scipy.jpg" alt=""></br>
+            <div id="scikit-learn">
+                <h3>Scikit-learn</h3>
+                <p>Scikit-learn is a Python library which is used for classical machine learning algorithms.</p>
+                <p>It is built on the top of two basic libraries of Python, that is NumPy and SciPy.</p>
+                <p>Scikit-learn is popular in Machine learning developers as it supports supervised and unsupervised
+                    learning algorithms.</p>
+                <p>This library can also be used for data-analysis, and data-mining process</p>
+                </br>
+                <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                 position: relative;
+                 left: -7px;">
+                    <p>from sklearn import datasets as ds</p>
+                    <p>from sklearn import metrics as mt</p>
+                    <p>from sklearn.tree import DecisionTreeClassifier as dtc</p>
+                    <p># load the iris datasets</p>
+                    <p>dataset_1 = ds.load_iris()</p>
+                    <p># fit a CART model to the data</p>
+                    <p>model_1 = dtc()</p>
+                    <p>model_1.fit(dataset_1.data, dataset_1.target)</p>
+                    <p>print(model)</p>
+                    <p># make predictions</p>
+                    <p>expected_1 = dataset_1.target</p>
+                    <p>predicted_1 = model_1.predict(dataset_1.data)</p>
+                    <p># summarize the fit of the model</p>
+                    <p>print (mt.classification_report(expected_1, predicted_1))</p>
+                    <p>print(mt.confusion_matrix(expected_1, predicted_1))</p>
+
+                </div></br>
+                <h2 class="code" style="left: 121px;">OUTPUT</h2>
+                <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                 position: relative;
+                 left: -7px;">
+                   <p> DecisionTreeClassifier()</p>
+                    <p>precision recall f1-score support</p>
+
+                   <p> 0 1.00 1.00 1.00 50</p>
+                    <p>1 1.00 1.00 1.00 50</p>
+                    <p>2 1.00 1.00 1.00 50</p>
+
+                    <p>accuracy 1.00 150</p>
+                    <p>macro avg 1.00 1.00 1.00 150</p>
+                    <p>weighted avg 1.00 1.00 1.00 150</p>
+
+                    <p>[[50 0 0]</p>
+                    <p>[ 0 50 0]</p>
+                    <p>[ 0 0 50]]</p>
+
+                </div>
+            </div>
+        <img style="position: absolute;
+        left: 916px;
+        top: 2300px;" src="images/scikit.jpg" alt=""></br>
+            <div id="naturalLanguageToolKit">
+                <h3>Natural Language Tool Kit</h3>
+                <p>NLTK stands for Natural Learning Tool Kit and emphasizes natural language processing.</p>
+                 <p>It is considered one of the most widespread human language data libraries to work with.</p>
+                 <p>NLTK provides engineers with simple interfaces and a vast selection of lexical resources like FrameNet, WordNet, and Word2Vec.</p>
+                 <p>NLTK also brings other advantages to the table, such as:</p>
+                 <p>1.	Handwriting and voice recognition</p>
+                 <p>2.	Document keyword search</p>
+                 <p>3.	Text classification and tokenization</p>
+                 <p>4.	Word lemmatization and stemming</p></br>
+                 <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                 position: relative;
+                 left: -7px;">
+                <p> import nltk</p>
+                 <p>from nltk.tokenize import word_tokenize</p>
+                <p> # Sample text</p>
+                <p> text = "NLTK is a leading platform for building Python programs to work with human language data."</p>
+                 <p># Tokenization</p>
+                <p> tokens = word_tokenize(text)</p>
+                <p> # Display the tagged tokens</p>
+                <p> print("Tokenized Text:", tokens)</p>
+                 </div></br>
+                 <h2 class="code" style="left: 121px;">OUTPUT</h2>
+                 <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                 position: relative;
+                 left: -7px;">
+                 <p>Tokenized Text: NLTK </p>
+                 <p>Is</p>
+                <p> a  </p>
+                <p> leading  </p>
+                <p> platform</p>
+                <p> for </p>
+                <p> building </p>
+                <p> Python</p>
+                <p> programs </p>
+                <p> to</p>
+                <p> work </p>
+                <p> with</p>
+                <p> human</p>
+                <p> language </p>
+                <p>  data</p>
+
+                 </div>
+            </div></br>
+            <div id="tensorflow">
+                <h3>TensorFlow</h3>
+               <p> TensorFlow is an open-source library of Python which is used for high performance of numerical computation.</p> <p>It is a popular library, which was developed by the Brain team in Google. </p><p>TensorFlow is a framework that involves defining and running computations involving tensors. </p><p>TensorFlow can be used for training and running deep neural networks, which can be used for developing several Artificial Intelligence applications.</p>
+            </br>
+            <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                 position: relative;
+                 left: -7px;">
+                 <p>import tensorflow as tsf  </p>
+                 <p># Initialize two constants  </p>
+                 <p>K_1 = tsf.constant([2, 4, 6, 8]) </p> 
+                 <p>K_2 = tsf.constant([1, 3, 5, 7]) </p>    
+                 <p># Multiply  </p>
+                 <p>result = tsf.multiply(K_1, K_2) </p> 
+                 <p># Initialize the Session  </p>
+                 <p>sess_1 = tsf.Session()    </p>
+                 <p># Print the result  </p>
+                 <p>print (sess_1.run(result)) </p>  
+                 <p># Close the session  </p>
+                 <p>sess_1.close()  </p>
+                 
+                 </div>
+                </br>
+                 <h2 class="code" style="left: 121px;">OUTPUT</h2>
+                 <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                 position: relative;
+                 left: -7px; height:50px;">
+                [ 2 12 30 56] 
+                </div>
+            </div>
+        <img style="position: absolute;
+        left: 972px;
+        top: 3492px;
+        border-radius: 25px;" src="images/tensorflow.jpg" alt=""></br>
+            <div id="keras">
+                <h3>Keras</h3>
+               <p> Keras is a high-level neural networking API, which is capable of running on top of TensorFlow, CNTK and Theano libraries.</p> <p>It is a very famous library of Python among Machine learning developers.</p> <p>It can run without a glitch on both CPU and GPU.</p><p> IT makes it really easy and simple for Machine Learning beginners and for designing a Neural Network. </p><p>It is also used for fast prototyping.</p></br>
+               <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                 position: relative;
+                 left: -7px; ">
+               <p> import numpy as nup  </p>
+                <p>from tensorflow import keras as ks  </p>
+                <p>from tensorflow.keras import layers as ls  </p>
+                <p>number_classes = 10  </p>
+                <p>input_shapes = (28, 28, 1)    </p>
+                <p># Here, we will import the data, and split it between train and test sets  </p>
+                <p>(x_1_train, y_1_train), (x_2_test, y_2_test) = ks.datasets.mnist.load_data() </p>  
+                <p># now, we will Scale images to the [0, 1] range  </p>
+                <p>x_1_train = x_1_train.astype("float32") / 255  </p>
+                <p>x_2_test = x_2_test.astype("float32") / 255  </p>
+                <p># we have to make sure that the images have shape (28, 28, 1) </p> 
+                <p>x_1_train = nup.expand_dims(x_1_train, -1)  </p>
+                <p>x_2_test = nup.expand_dims(x_2_test, -1)  </p>
+                <p>print ("x_train shape:", x_1_train.shape)  </p>
+                <p>print (x_1_train.shape[0], "Training samples")  </p>
+                <p>print (x_2_test.shape[0], "Testing samples")  </p>
+                <p># Then we will convert class vectors to binary class matrices  </p>
+                <p>y_1_train = ks.utils.to_categorical(y_1_train, number_classes) </p> 
+                <p>y_2_test = ks.utils.to_categorical(y_2_test, number_classes)  </p>
+                <p>model_1 = ks.Sequential(  </p>
+                   <p> [  </p>
+                     <p>   ks.Input(shape = input_shapes),  </p>
+                      <p>  ls.Conv2D(32, kernel_size = (3, 3), activation = "relu"),</p>  
+                      <p>  ls.MaxPooling2D(pool_size = (2, 2)),  </p>
+                      <p>  ls.Conv2D(64, kernel_size = (3, 3), activation = "relu"),  </p>
+                       <p> ls.MaxPooling2D(pool_size = (2, 2)),  </p>
+                       <p> ls.Flatten(),  </p>
+                       <p> ls.Dropout(0.5),  </p>
+                       <p> ls.Dense(number_classes, activation = "softmax"),  </p>
+                   <p> ]  
+                <p>)  
+                <p>model_1.summary()  
+                 
+                </div>
+            </br>
+            <h2 class="code" style="left: 121px;">OUTPUT</h2>
+                 <div class="scroll-block" style="color: #031c4c;background-color: #bdafe2;
+                 position: relative;
+                 left: -7px; ">
+                <p>x_train shape: (60000, 28, 28, 1)</p>
+                <p>60000 Training samples</p>
+                <p>10000 Testing samples</p>
+                <p>Model: "sequential"</p>
+                <p>_________________________________________________________________</p>
+                <p>Layer (type)                 Output Shape              Param #   </p>
+                <p>=================================================================</p>
+                <p>conv2d (Conv2D)              (None, 26, 26, 32)        320       </p>
+                <p>_________________________________________________________________</p>
+                <p>max_pooling2d (MaxPooling2D) (None, 13, 13, 32)        0         </p>
+                <p>_________________________________________________________________</p>
+                <p>conv2d_1 (Conv2D)            (None, 11, 11, 64)        18496     </p>
+                <p>_________________________________________________________________</p>
+                <p>max_pooling2d_1 (MaxPooling2 )(None, 5, 5, 64)          0         </p>
+                <p>_________________________________________________________________</p>
+                <p>flatten (Flatten)            (None, 1600)              0         </p>
+                <p>_________________________________________________________________</p>
+                <p>dropout (Dropout)            (None, 1600)              0         </p>
+                <p>_________________________________________________________________</p>
+                <p>dense (Dense)                (None, 10)                16010     </p>
+                <p>=================================================================</p>
+                <p>Total params: 34,826</p>
+                <p>Trainable params: 34,826</p>
+                <p>Non-trainable params: 0</p>
+                
+                </div>
+            </div>
+            <img style="position: absolute;
+            top: 4068px;
+            width: 250px;
+            left: 290px;" src="images/keras.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

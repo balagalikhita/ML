@@ -1,0 +1,104 @@
+#numpy{
+    width: 663px;
+    height: 482px;
+    text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 32px;
+      
+      padding: 24px;
+   
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#pandas{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height:482px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#matplotlib{
+    width: 663px;
+    height: 671px;
+    text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 32px;
+      
+      padding: 24px;
+   
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#sciPy{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height:482px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#scikit-learn{
+    width: 663px;
+    height:539px;
+    text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 32px;
+      
+      padding: 24px;
+   
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#naturalLanguageToolKit{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height:581px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#tensorflow{
+    width: 663px;
+    height:539px;
+    text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 32px;
+      
+      padding: 24px;
+   
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#keras{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height:581px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}

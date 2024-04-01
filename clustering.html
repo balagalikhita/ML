@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="classification.css">
+    <title>Clustering</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="menu">
+            <h2 id="logo">Machine Learning</h2>
+            <a href="#introclassification">Clustering</a>
+            
+            <a href="#naive">Hierarchical Clustering</a>
+            <a href="#knear">K-means clustering</a>
+            <a href="#classificationappli">Applications of Clustering</a>
+        </div>
+        <div class="sidebody">
+            <img src="images/logo.png" id="lo">
+            <div id="title" style=" position: absolute;
+            left: 702px;"><b>CLUSTERING</b></div>
+            </br>
+            </br>
+            </br>
+            <div class="introclassification" id="introclassification">
+                <h3>Introduction</h3>
+                Clustering or cluster analysis is a machine learning technique, which groups the unlabelled dataset. 
+                It can be defined as "A way of grouping the data points into different clusters, consisting of similar data points. 
+                The objects with the possible similarities remain in a group that has less or no similarities with another group."
+                It is an unsupervised learning method, hence no supervision is provided to the algorithm, and it deals with the unlabeled dataset.
+            </br>
+                Example: Let's understand the clustering technique with the real-world example of Mall: When we visit any shopping mall, we can observe that the things with similar usage are grouped together. Such as the t-shirts are grouped in one section, and trousers are at other sections, similarly, at vegetable sections, apples, bananas, Mangoes, etc., are grouped in separate sections, so that we can easily find out the things.
+                The clustering technique also works in the same way. Other examples of clustering are grouping documents according to the topic.
+            </br>
+               <b> Note: Clustering is somewhere similar to the classification algorithm, but the difference is the type of dataset that we are using. 
+                In classification, we work with the labeled data set, whereas in clustering, we work with the unlabelled dataset.</b>
+            </div>
+            </br>
+            <div class="type" style="height:353px;">
+                <h3>TYPES OF CLUSTERING METHODS</h3>
+                <p>Partitioning Clustering: It is a type of clustering that divides the data into non-hierarchical groups. 
+                    It is also known as the centroid-based method.</p>
+                    Example:K-Means Clustering algorithm.
+                <p>Density-Based Clustering: The density-based clustering method connects the highly-dense areas into clusters, 
+                    and the arbitrarily shaped distributions are formed as long as the dense region can be connected.</p>
+                <p>Distribution Model-Based Clustering:In the distribution model-based clustering method, the data is divided based on the probability of how a dataset belongs to a particular distribution.
+                     The grouping is done by assuming some distributions commonly Gaussian Distribution.</p>
+                <p>Hierarchical Clustering:In this technique, the dataset is divided into clusters to create a tree-like structure,which is also called a dendrogram. 
+                    The observations or any number of clusters can be selected by cutting the tree at the correct level. </p>
+            </div>
+            </br>
+        
+            </br>
+            <div class="naive" id="naive">
+                <h3>Hierarchical clustering</h3>
+                Hierarchical clustering is another unsupervised machine learning algorithm, which is used to group the unlabeled datasets into a cluster and also known as hierarchical cluster analysis or HCA.
+In this algorithm, we develop the hierarchy of clusters in the form of a tree, and this tree-shaped structure is known as the dendrogram.
+Sometimes the results of K-means clustering and hierarchical clustering may look similar, but they both differ depending on how they work. As there is no requirement to predetermine the number of clusters as we did in the K-Means algorithm.
+The hierarchical clustering technique has two approaches:
+            </br>
+1.	Agglomerative: Agglomerative is a bottom-up approach, in which the algorithm starts with taking all data points as single clusters 
+and merging them until one cluster is left.
+        </br>
+2.	Divisive: Divisive algorithm is the reverse of the agglomerative algorithm as it is a top-down approach.
+<h3>Why is hierarchical clustering</h3>
+As we already have other clustering algorithms such as K-Means Clustering, then why we need hierarchical clustering? 
+So, as we have seen in the K-means clustering that there are some challenges with this algorithm, which are a predetermined number of clusters, 
+and it always tries to create the clusters of the same size. To solve these two challenges, we can opt for the hierarchical clustering algorithm because, 
+in this algorithm, we don't need to have knowledge about the predefined number of clusters.
+<br>
+In this topic, we will discuss the Agglomerative Hierarchical clustering algorithm.
+Agglomerative Hierarchical clustering
+</div> </br>
+            <div class="implementclass" style="width: 636px;
+           height: 510px;">
+                <h3>Working of Agglomerative Hierarchical clustering </h3>
+
+                
+
+                <p> The working of the AHC algorithm can be explained using the below steps:</p>
+
+                <p>Step-1: Create each data point as a single cluster. Let's say there are N data points, so the number of clusters will also be N. </p>
+
+                <p>Step-2: Take two closest data points or clusters and merge them to form one cluster. So, there will now be N-1 clusters.</p>
+
+                <p>Step-3: Again, take the two closest clusters and merge them together to form one cluster. There will be N-2 clusters.</p>
+
+                <p>Step-4:Repeat Step 3 until only one cluster left. </p>
+               <p>Step-5:Once all the clusters are combined into one big cluster, develop the dendrogram to divide the clusters as per the problem.</p>
+            
+               <h3>Measure for the distance between two clusters</h3>
+                <p>As we have seen, the closest distance between the two clusters is crucial for the hierarchical clustering. There are various ways to calculate the distance between two clusters, and these ways decide the rule for clustering. These measures are called Linkage methods. 
+                    Some of the popular linkage methods are given below:</p>
+
+                <p>1.Single Linkage: It is the Shortest Distance between the closest points of the clusters.</p>
+
+                <p>2.Complete Linkage: It is the farthest distance between the two points of two different clusters. It is one of the popular linkage methods as it forms tighter clusters than single-linkage.</p>
+
+                <p>
+                    3.Average Linkage: It is the linkage method in which the distance between each pair of datasets is added up and then divided by the total number of datasets to calculate the average distance between two clusters. It is also one of the most popular linkage methods.
+                </p>
+
+                <p>4.Centroid Linkage: It is the linkage method in which the distance between the centroid of the clusters is calculated.</p>
+            </div>
+            </br>
+            <h2 class="code" style="position: relative;
+            bottom: 8px;
+            left: 628px;">CODE FOR AGGLOMERATIVE CLUSTERING </h2>
+            <div class="scroll-block" style="position: relative;
+            left: 400px;">
+                <p>import numpy as nm</p>
+
+                <p> import matplotlib.pyplot as mtp</p>
+
+                <p>import pandas as pd </p>
+
+
+
+                <p># Importing the dataset</p>
+
+                <p>dataset = pd.read_csv('/content/User_Data[1].csv')</p>
+
+                <p>x = dataset.iloc[:, [3, 4]].values </p>
+
+                <p>#Finding the optimal number of clusters using the dendrogram  </p>
+                <p>import scipy.cluster.hierarchy as shc  </p>
+                <p>dendro = shc.dendrogram(shc.linkage(x, method="ward"))</p>
+                <p>mtp.title("Dendrogrma Plot")  </p>
+                <p>mtp.ylabel("Euclidean Distances")  </p>
+                <p>mtp.xlabel("Customers")  </p>
+                <p>mtp.show() </p>
+                <p>#training the hierarchical model on dataset  </p>
+                <p>from sklearn.cluster import AgglomerativeClustering</p>
+                <p>hc= AgglomerativeClustering(n_clusters=5, affinity='euclidean', linkage='ward')</p>
+                <p>y_pred= hc.fit_predict(x) </p>
+                <p>#visulaizing the clusters  </p>
+                <p>mtp.scatter(x[y_pred == 0, 0], x[y_pred == 0, 1], s = 100, c = 'blue', label = 'Cluster 1') </p>
+                <p>mtp.scatter(x[y_pred == 1, 0], x[y_pred == 1, 1], s = 100, c = 'green', label = 'Cluster 2') </p>
+                <p>mtp.scatter(x[y_pred== 2, 0], x[y_pred == 2, 1], s = 100, c = 'red', label = 'Cluster 3') </p>
+                <p>mtp.scatter(x[y_pred == 3, 0], x[y_pred == 3, 1], s = 100, c = 'cyan', label = 'Cluster 4')  </p>
+                <p>mtp.scatter(x[y_pred == 4, 0], x[y_pred == 4, 1], s = 100, c = 'magenta', label = 'Cluster 5') </p>
+                <p>mtp.title('Clusters of customers')  </p>
+                <p>mtp.xlabel('Annual Income (k$)')  </p>
+                <p>mtp.ylabel('Spending Score (1-100)')  </p>
+                <p>mtp.legend()  </p>
+                <p>mtp.show()  </p>
+            </div>
+            </br>
+            <h2 class="output" style="position: relative;
+            left: 632px;">OUTPUT</h2>
+            <div class="scroll-block" style="position: relative;
+            left: 400px;">
+                <p>User ID Gender Age EstimatedSalary Purchased</p>
+
+                <p>0 15624510 Male 19 19000 0</p>
+
+                <p>1 15810944 Male 35 20000 0</p>
+
+                <p>2 15668575 Female 26 43000 0</p>
+
+                <p>3 15603246 Female 27 57000 0</p>
+
+                <p>4 15804002 Male 19 76000 0</p>
+
+                <p> .. ... ... ... ... ...</p>
+
+                <p>395 15691863 Female 46 41000 1</p>
+
+                <p>396 15706071 Male 51 23000 1</p>
+
+                <p>397 15654296 Female 50 20000 1</p>
+
+                <p>398 15755018 Male 36 33000 0</p>
+
+                <p>399 15594041 Female 49 36000 1</p>
+
+
+
+                <p>[400 rows x 5 columns]</p>
+
+                <p> [[-0.80480212 0.50496393]</p>
+
+                <p>[-0.01254409 -0.5677824 ]</p>
+
+                <p>[-0.30964085 0.1570462 ]</p>
+
+                <p>[-0.80480212 0.27301877]</p>
+
+                <p>[-0.30964085 -0.5677824 ]</p>
+
+                <p>[-1.10189888 -1.43757673]</p>
+
+                <p>[-0.70576986 -1.58254245]</p>
+
+                <p>[-0.21060859 2.15757314]
+                </p>
+                <p>[-1.99318916 -0.04590581]</p>
+
+                <p>[ 0.8787462 -0.77073441]
+                </p>
+                <p>[-0.80480212 -0.59677555]</p>
+
+                <p>[-1.00286662 -0.42281668]</p>
+
+                <p>[-0.11157634 -0.42281668]</p>
+
+                <p>[ 0.08648817 0.21503249]
+                </p>
+                <p>[-1.79512465 0.47597078]
+                </p>
+                <p>[-0.60673761 1.37475825]
+                </p>
+                <p>[-0.11157634 0.21503249]
+                </p>
+                <p>[-1.89415691 0.44697764]
+                </p>
+                <p>[ 1.67100423 1.75166912]
+                </p>
+                <p>[-0.30964085 -1.37959044]</p>
+
+                <p>[-0.30964085 -0.65476184]</p>
+
+                <p>[ 0.8787462 2.15757314]
+
+                </p>
+                <p>[ 0.28455268 -0.53878926]</p>
+
+                <p>[ 0.8787462 1.02684052]
+
+                </p>
+                <p>[-1.49802789 -1.20563157]</p>
+
+                <p>[ 1.07681071 2.07059371]
+                </p>
+                <p>[-1.00286662 0.50496393]
+                </p>
+                <p>[-0.90383437 0.30201192]
+                </p>
+                <p>[-0.11157634 -0.21986468]</p>
+
+                <p>[-0.60673761 0.47597078]
+                </p>
+                <p>[-1.6960924 0.53395707]
+
+                </p>
+                <p>[-0.11157634 0.27301877]
+                </p>
+                <p>[ 1.86906873 -0.27785096]</p>
+
+                <p>[-0.11157634 -0.48080297]</p>
+
+                <p>[-1.39899564 -0.33583725]</p>
+
+                <p>[-1.99318916 -0.50979612]</p>
+
+                <p>[-1.59706014 0.33100506]
+                </p>
+                <p>[-0.4086731 -0.77073441]
+                </p>
+                <p>[-0.70576986 -1.03167271]</p>
+
+                <p>[ 1.07681071 -0.97368642]</p>
+
+                <p>[-1.10189888 0.53395707]
+                </p>
+                <p>[ 0.28455268 -0.50979612]</p>
+
+                <p>[-1.10189888 0.41798449]
+                </p>
+                <p>[-0.30964085 -1.43757673]</p>
+
+                <p> [ 0.48261718 1.22979253]</p>
+
+                <p> [-1.10189888 -0.33583725]
+                </p>
+                <p> [-0.11157634 0.30201192]</p>
+
+                <p> [ 1.37390747 0.59194336]</p>
+
+                <p> [-1.20093113 -1.14764529]</p>
+
+                <p> [ 1.07681071 0.47597078]</p>
+
+                <p> [ 1.86906873 1.51972397]</p>
+
+                <p> [-0.4086731 -1.29261101]</p>
+
+                <p> [-0.30964085 -0.3648304 ]</p>
+
+                <p> [-0.4086731 1.31677196]</p>
+
+
+                <p> [ 0.68068169 -1.089659 ]</p>
+
+                <p> [-0.90383437 0.38899135]</p>
+
+                <p> [-1.39899564 0.56295021]</p>
+
+                <p> [-1.10189888 -0.33583725]
+                </p>
+                <p> [ 0.18552042 -0.65476184]</p>
+
+                <p>
+                    [ 0.38358493 0.01208048]</p>
+
+                <p> [-0.60673761 2.331532 ]</p>
+
+                <p> [-0.30964085 0.21503249]</p>
+
+                <p> [-1.59706014 -0.19087153]</p>
+
+                <p> [ 0.68068169 -1.37959044]]</p>
+
+                <p> [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 0 1 1 0 0 0 0
+
+                    0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 1
+
+                    0 0 0 0 1 1 1 0 0 0 1 1 0 1 1 0 0 1 0 0 0 1 0 1 1 1] </p>
+            </div>
+           
+            </br>
+            <div class="knear" id="knear">
+                <h3>K-Means Clustering</h3>
+                K-Means Clustering is an unsupervised learning algorithm that is used to solve the clustering problems 
+                in machine learning or data science. In this topic, we will learn what is K-means clustering algorithm, how 
+                the algorithm works, along with the Python implementation of k-means clustering.
+            </br>
+                K-Means Clustering is an Unsupervised Learning algorithm, which groups the unlabeled dataset into different clusters. 
+                Here K defines the number of pre-defined clusters that need to be created in the process, as if K=2, there will be two clusters, 
+                and for K=3, there will be three clusters, and so on.
+              It is an iterative algorithm that divides the unlabeled dataset into k different clusters in such a way that each dataset 
+              belongs only one group that has similar properties.
+              It allows us to cluster the data into different groups and a convenient way to discover the 
+              categories of groups in the unlabeled dataset on its own without the need for any training.
+             It is a centroid-based algorithm, where each cluster is associated with a centroid. The main aim of this 
+              algorithm is to minimize the sum of distances between the data point and their corresponding clusters.
+              The algorithm takes the unlabeled dataset as input, divides the dataset into k-number of clusters, and repeats the process until it does not find the best clusters. The value of k should be predetermined in this algorithm.
+         The k-means clustering algorithm mainly performs two tasks:
+         <br>Determines the best value for K center points or centroids by an iterative process.
+        <br>Assigns each data point to its closest k-center. Those data points which are near to the particular k-center, create a cluster.
+       Hence each cluster has datapoints with some commonalities, and it is away from other clusters.
+
+            </div>
+            <div class="implementclass" style="position: relative;
+            top: -73px;
+            left: 455px;height: 231px;">
+                <h3>How does K-means work?</h3>
+
+                
+
+                <p>Step-1:Select the number K to decide the number of clusters.</p>
+
+                <p>Step-2:Select random K points or centroids. (It can be other from the input dataset). </p>
+
+                <p>Step-3:Assign each data point to their closest centroid, which will form the predefined K clusters. </p>
+
+                <p>Step-4:Calculate the variance and place a new centroid of each cluster.</p>
+
+                <p>Step-5:Repeat the third steps, which means reassign each datapoint to the new closest centroid of each cluster.
+                </p>
+
+                <p>Step-6:If any reassignment occurs, then go to step-4 else go to FINISH.</p>
+                <p>Step-7:The model is ready.</p>
+            </div>
+            <div class="implementclass" style="height:194px;
+                position: relative;
+                top: -52px;">
+                <h3>How to select the value of K in the K-means Algorithm?</h3>
+
+                <p>Elbow Method:</p>
+                	<p>It executes the K-means clustering on a given dataset for different K values (ranges from 1-10).</p>
+                	<p>For each value of K, calculates the WCSS value.</p>
+                	<p>Plots a curve between calculated WCSS values and the number of clusters K.</p>
+                	The sharp point of bend or a point of the plot looks like an arm, then that point is considered as the
+                 best value of K.
+            </div>
+            <div class="implementclass" style="height: 195px;
+                    position: relative;
+                    top: -292px;
+                    left: 667px;
+                    width: 500px;">
+                <h3>Advantages of K-means Algorithm: </h3>
+
+                <p> Easy to implement and computationally efficient for large datasets. </p>
+
+                <p>Can be optimized to handle very large datasets effectively.</p>
+                <p> Adaptable to various types of data and useful in different domains.</p>
+
+                <h3>Disadvantages of K-means Algorithm:</h3>
+
+                <p>The final clusters heavily depend on the initial choice of centroids, potentially leading to suboptimal solutions.</p>
+
+                <p> K-Means assumes clusters are spherical and of similar size, which doesn't hold for complex data structures.</p>
+            </div>
+            
+            <h2 class="code" style="position: relative;
+            bottom: 158px;
+            left: 124px;">CODE </h2>
+            <div class="scroll-block" style="position: relative;
+            bottom: 136px;">
+                <p>import numpy as nm </p>
+
+                <p>import matplotlib.pyplot as mtp </p>
+
+                <p>import pandas as pd </p>
+
+
+
+                <p>#importing datasets </p>
+
+                <p>dataset= pd.read_csv('/user_data.csv') </p>
+
+
+
+                <p>#Extracting Independent and dependent Variable </p>
+
+                <p>x= dataset.iloc[:, [3,4]].values </p>
+
+                <p>#finding optimal number of clusters using the elbow method</p>
+
+
+
+                <p>from sklearn.cluster import KMeans  </p>
+
+                <p>wcss_list= []  #Initializing the list for the values of WCSS</p>
+
+                <p>#Using for loop for iterations from 1 to 10.</p>
+
+                <p>for i in range(1, 11):</p>
+
+                <p> kmeans = KMeans(n_clusters=i, init='k-means++', random_state= 42)</p>
+
+                <p>kmeans.fit(x)  </p>
+
+                <p>wcss_list.append(kmeans.inertia_)</p>
+
+                <p>mtp.plot(range(1, 11), wcss_list)</p>
+
+
+
+                <p>mtp.title('The Elobw Method Graph')</p>
+
+                <p>mtp.xlabel('Number of clusters(k)')</p>
+
+                <p>mtp.ylabel('wcss_list')  </p>
+                <p>mtp.show()</p>  
+                <p>#training the K-means model on a dataset </p> 
+               <p>kmeans = KMeans(n_clusters=5, init='k-means++', random_state= 42)</p>
+                <p>y_predict= kmeans.fit_predict(x) </p>  
+                <p>#visulaizing the clusters</p>  
+                <p>mtp.scatter(x[y_predict == 0, 0], x[y_predict == 0, 1], s = 100, c = 'blue', label = 'Cluster 1') #for first cluster</p>  
+                <p>mtp.scatter(x[y_predict == 1, 0], x[y_predict == 1, 1], s = 100, c = 'green', label = 'Cluster 2') #for second cluster</p>  
+                <p>mtp.scatter(x[y_predict== 2, 0], x[y_predict == 2, 1], s = 100, c = 'red', label = 'Cluster 3') #for third cluster </p> 
+                <p>mtp.scatter(x[y_predict == 3, 0], x[y_predict == 3, 1], s = 100, c = 'cyan', label = 'Cluster 4') #for fourth cluster  </p>
+                <p>mtp.scatter(x[y_predict == 4, 0], x[y_predict == 4, 1], s = 100, c = 'magenta', label = 'Cluster 5') #for fifth cluster</p>  
+                <p>mtp.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s = 300, c = 'yellow', label = 'Centroid')</p>   
+                <p>mtp.title('Clusters of customers')</p>  
+                <p>mtp.xlabel('Annual Income (k$)') </p> 
+                <p>mtp.ylabel('Spending Score (1-100)') </p> 
+                <p>mtp.legend()</p>  
+                <p>mtp.show()</p>  
+
+            </div>
+            <h2 class="code" style="position: relative;
+                bottom: 98px;
+                left: 124px;">OUTPUT</h2>
+            <div class="scroll-block" style="bottom: 79px;position: relative;">
+                <p>User ID Gender Age EstimatedSalary Purchased </p>
+
+                <p>0 15624510 Male 19 19000 0 </p>
+
+                <p>1 15810944 Male 35 20000 0 </p>
+
+                <p>2 15668575 Female 26 43000 0 </p>
+
+                <p>3 15603246 Female 27 57000 0 </p>
+
+                <p>4 15804002 Male 19 76000 0 </p>
+
+                <p>.. ... ... ... ... ... </p>
+
+                <p>395 15691863 Female 46 41000 1 </p>
+
+                <p>396 15706071 Male 51 23000 1 </p>
+
+                <p>397 15654296 Female 50 20000 1 </p>
+
+                <p>398 15755018 Male 36 33000 0</p>
+
+                <p>399 15594041 Female 49 36000 1 </p>
+
+
+
+                <p>[400 rows x 5 columns] </p>
+
+                <p>[[-0.80480212 0.50496393] </p>
+
+                <p>[-0.01254409 -0.5677824 ] </p>
+
+                <p>[-0.30964085 0.1570462 ] </p>
+
+                <p>[-0.80480212 0.27301877] </p>
+
+                <p>[-0.30964085 -0.5677824 ] </p>
+
+                <p>[-1.10189888 -1.43757673] </p>
+
+                <p>[-0.70576986 -1.58254245] </p>
+
+                <p>[-0.21060859 2.15757314] </p>
+
+                <p>[-1.99318916 -0.04590581] </p>
+
+                <p>[ 0.8787462 -0.77073441] </p>
+
+                <p>[-0.80480212 -0.59677555] </p>
+
+                <p>[-1.00286662 -0.42281668] </p>
+
+                <p>[-0.11157634 -0.42281668]</p>
+
+                <p> [ 0.08648817 0.21503249] </p>
+
+                <p> [-1.79512465 0.47597078] </p>
+
+                <p> [-0.60673761 1.37475825] </p>
+
+                <p> [-0.11157634 0.21503249] </p>
+
+                <p> [-1.89415691 0.44697764] </p>
+
+                <p> [ 1.67100423 1.75166912] </p>
+
+                <p> [-0.30964085 -1.37959044] </p>
+
+                <p> [-0.30964085 -0.65476184] </p>
+
+                <p> [ 0.8787462 2.15757314] </p>
+
+                <p> [ 0.28455268 -0.53878926] </p>
+
+                <p> [ 0.8787462 1.02684052] </p>
+
+                <p> [-1.49802789 -1.20563157] </p>
+
+                <p> [ 1.07681071 2.07059371] </p>
+
+                <p> [-1.00286662 0.50496393] </p>
+
+                <p> [-0.90383437 0.30201192] </p>
+
+                <p> [-0.11157634 -0.21986468] </p>
+
+                <p> [-0.60673761 0.47597078] </p>
+
+                <p> [-1.6960924 0.53395707] </p>
+
+                <p> [-0.11157634 0.27301877] </p>
+
+                <p> [ 1.86906873 -0.27785096] </p>
+
+                <p> [-0.11157634 -0.48080297] </p>
+
+                <p> [-1.39899564 -0.33583725] </p>
+
+                <p> [-1.99318916 -0.50979612] </p>
+
+                <p> [-1.59706014 0.33100506] </p>
+
+                <p> [-0.4086731 -0.77073441] </p>
+
+                <p> [-0.70576986 -1.03167271] </p>
+
+                <p> [ 1.07681071 -0.97368642]</p>
+
+                <p> [-1.10189888 0.53395707]</p>
+
+                <p> [ 0.28455268 -0.50979612]</p>
+
+                <p> [-1.10189888 0.41798449] </p>
+
+                <p> [-0.30964085 -1.43757673] </p>
+
+                <p> [ 0.48261718 1.22979253] </p>
+
+                <p> [-1.10189888 -0.33583725] </p>
+
+                <p> [-0.11157634 0.30201192] </p>
+
+                <p> [ 1.37390747 0.59194336] </p>
+
+                <p> [-1.20093113 -1.14764529] </p>
+
+                <p> [ 1.07681071 0.47597078] </p>
+
+                <p> [ 1.86906873 1.51972397] </p>
+
+                <p> [-0.4086731 -1.29261101] </p>
+
+                <p> [-0.30964085 -0.3648304 ] </p>
+
+                <p> [-0.4086731 1.31677196] </p>
+
+                <p> [ 2.06713324 0.53395707] </p>
+
+                <p> [ 0.68068169 -1.089659 ] </p>
+
+                <p> [-0.90383437 0.38899135] </p>
+
+                <p>[-1.39899564 0.56295021] </p>
+
+                <p> [-1.10189888 -0.33583725] </p>
+
+                <p> [ 0.18552042 -0.65476184] </p>
+
+                <p> [ 0.38358493 0.01208048] </p>
+
+                <p>[-0.60673761 2.331532 ] </p>
+
+                <p> [-0.30964085 0.21503249] </p>
+
+                <p>[-1.59706014 -0.19087153] </p>
+
+                <p>[ 0.68068169 -1.37959044]] </p>
+
+                <p>[0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 0 1 1 0 0 0 0
+
+                    0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 1
+
+                    0 0 0 0 1 1 1 0 0 0 1 1 0 1 1 0 0 1 0 0 0 1 0 1 1 1] </p>
+
+            </div>
+            
+            <div class="classificationappli" id="classificationappli" style="height: 469px;">
+                <h3>APPLICATIONS</h3>
+                <p>Clustering, a key technique in unsupervised machine learning, has a wide range of applications across various domains. Here are some notable applications:</p>
+
+<p>Customer Segmentation: Businesses use clustering to segment customers based on purchasing behavior, preferences, demographics, etc., to 
+    tailor marketing strategies and improve customer service.</p>
+<p>Image Segmentation: In computer vision, clustering algorithms segment images into components for tasks like object recognition, boundary detection, 
+    and image compression.</p>
+<p>Social Network Analysis: Clustering helps in identifying communities within social networks based on interests, interactions,
+     or connections, facilitating targeted advertising, recommendation systems, and understanding social dynamics.</p>
+<p>Anomaly Detection: By clustering data, outliers or anomalies (data points that do not fit into any cluster) can be identified.
+    This is useful in fraud detection, network security, and fault detection.</p>
+<p>Bioinformatics: Clustering is used in gene expression data analysis, helping to identify groups of genes with similar expression patterns, 
+    which can be indicative of certain biological functions or diseases.</p>
+<p>Document Clustering: Used in information retrieval and text mining, clustering groups similar documents together, aiding in document organization,
+    summarization, and search engine optimization.</p>
+<p>Market Research: Identifying clusters within market data can reveal patterns and trends that inform product development, competitive analysis, 
+    and sales strategies.</p>
+<p>Recommendation Systems: Clustering helps in creating groups of similar items or users, improving the accuracy and relevance of recommendations in 
+    e-commerce, streaming services, and content platforms.</p>
+
+            </div>
+        </div>
+</body>
+
+</html>

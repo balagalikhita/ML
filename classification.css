@@ -1,0 +1,124 @@
+.introclassification{
+    width: 834px;
+    height: 316px;
+    text-align: justify;
+        background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+        color: rgb(28, 172, 205);
+        border-radius: 46px;
+      margin: 8px;
+      padding: 24px;
+     
+      box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+      
+}
+.type{
+    width: 546px;
+    height: 199px;
+    text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 32px;
+      
+      padding: 24px;
+   
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+.division{
+    width: 546px;
+    height: 265px;
+    text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 32px;
+      
+      padding: 24px;
+   
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+.svmintro{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height: 308px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+.typesvm{
+    width: 546px;
+    height: 228px;
+    text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 32px;
+      padding: 11px;
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+.work{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height: 400px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+.implementclass{
+  width: 546px;
+  height: 168px;
+  text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    padding: 11px;
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+.naive{
+  position: relative;
+  left: 410px;
+  width: 742px;
+  height: 414px;
+  text-align: justify;
+  background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+  color: rgb(28, 172, 205);
+  border-radius: 32px;
+  margin: 9px;
+  padding: 11px;
+
+box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+.knear{
+ 
+  width: 742px;
+  height: 414px;
+  text-align: justify;
+  background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+  color: rgb(28, 172, 205);
+  border-radius: 32px;
+  margin: 9px;
+  padding: 11px;
+
+box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+.classificationappli{
+  width: 742px;
+  height: 324px;
+  text-align: justify;
+  background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+  color: rgb(28, 172, 205);
+  border-radius: 32px;
+  margin: 9px;
+  padding: 11px;
+
+box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}

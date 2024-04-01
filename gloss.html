@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gloss.css">
+    <title>Glossary</title>
+</head>
+<body>
+    <div class="menu">
+        <h2 id="logo">Machine Learning</h2>
+    </div>
+    <div class="sidebody">
+        <img src="images/logo.png" id="lo">
+        <a href="index.html">Back to Home</a>
+        <div id="title">Glossary</div>
+        <h2 style="
+    text-align: center;
+    color: #179ed4;
+    font-size: 24px;
+">Definitions of common machine learning terms.</h2>
+        <div id="a"><h2>Accuracy</h2>
+            Percentage of correct predictions made by the model.
+            <h2>Algorithm</h2>
+            A method, function, or series of instructions used to generate a machine learning model. Examples include linear regression, decision trees, support vector machines, and neural networks.
+            <h2>Attribute</h2>
+            A quality describing an observation (e.g. color, size, weight). In Excel terms, these are column headers.
+            </div>
+            <br/>
+            <div id="b"><h2>Bias metric</h2>
+                What is the average difference between your predictions and the correct value for that observation?
+                •	Low bias could mean every prediction is correct. It could also mean half of your predictions are above their actual values and half are below, in equal proportion, resulting in low average difference.
+                •	High bias (with low variance) suggests your model may be underfitting and you’re using the wrong architecture for the job.
+                <h2>Bias term</h2>
+                Allow models to represent patterns that do not pass through the origin. For example, if all my features were 0, would my output also be zero? Is it possible there is some base value upon which my features have an effect? Bias terms typically accompany weights and are attached to neurons or filters.
+                </div>
+                <br/>
+                <div id="c"><h2>Categorical Variables</h2>
+                    Variables with a discrete set of possible values. Can be ordinal (order matters) or nominal (order doesn’t matter).
+                    <h2>Classification</h2>
+                    Predicting a categorical output.
+                    •	Binary classification predicts one of two possible outcomes (e.g. is the email spam or not spam?)
+                    •	Multi-class classification predicts one of multiple possible outcomes (e.g. is this a photo of a cat, dog, horse or human?)
+                    <h2>Classification Threshold</h2>
+                    The lowest probability value at which we’re comfortable asserting a positive classification. For example, if the predicted probability of being diabetic is > 50%, return True, otherwise return False.
+                    <h2>Clustering</h2>
+                    Unsupervised grouping of data into buckets.
+                    <h2>Confusion Matrix</h2>
+                    Table that describes the performance of a classification model by grouping predictions into 4 categories.
+                    •	True Positives: we correctly predicted they do have diabetes
+                    •	True Negatives: we correctly predicted they don’t have diabetes
+                    •	False Positives: we incorrectly predicted they do have diabetes (Type I error)
+                    •	False Negatives: we incorrectly predicted they don’t have diabetes (Type II error)
+                    <h2>Continuous Variables</h2>
+                    Variables with a range of possible values defined by a number scale (e.g. sales, lifespan).
+                    Convergence
+                    A state reached during the training of a model when the loss changes very little between each iteration.
+                    </div>
+                    <div id="e">
+                       <h2>Epoch</h2> 
+                        An epoch describes the number of times the algorithm sees the entire data set.
+                        
+                    </div>
+                    <div id="f">
+                       <h2>False Positive Rate</h2> 
+   FPR=1−Specificity=(FalsePositives)/(FalsePositives+TrueNegatives)
+The False Positive Rate forms the x-axis of the ROC curve.          
+<h2>Feature</h2>
+With respect to a dataset, a feature represents an attribute and value combination. Color is an attribute. “Color is blue” is a feature.
+<h2>Feature Selection</h2>
+Feature selection is the process of selecting relevant features from a data-set for creating a Machine Learning model.
+<h2>Feature Vector</h2>
+A list of features describing an observation with multiple attributes. In Excel we call this a row.
+
+                    </div>
+                    <div id="h"><h2>Hyperparameters</h2>
+                        Hyperparameters are higher-level properties of a model such as how fast it can learn (learning rate) or complexity of a model. The depth of trees in a Decision Tree or number of hidden layers in a Neural Networks are examples of hyper parameters.
+                        </div>
+                        <div id="i"><h2>Induction</h2>
+                            A bottoms-up approach to answering questions or solving problems. A logic technique that goes from observations to theory. E.g. We keep observing X, so we infer that Y must be True.
+                            <h2>Instance</h2>
+                            A data point, row, or sample in a dataset. Another term for observation.
+                            </div>
+<div id="m"><h2>Model</h2>
+    A data structure that stores a representation of a dataset (weights and biases). Models are created/learned when you train an algorithm on a dataset.
+    </div>
+    <div id="n"><h2>Neural Networks</h2>
+        Neural Networks are mathematical algorithms modeled after the brain’s architecture, designed to recognize patterns and relationships in data.
+        <h2>Normalization</h2>
+        Restriction of the values of weights in regression to avoid overfitting and improving computation speed.
+        Noise
+        Any irrelevant information or randomness in a dataset which obscures the underlying pattern.
+        <h2>Null Accuracy</h2>
+        Baseline accuracy that can be achieved by always predicting the most frequent class (“B has the highest frequency, so lets guess B every time”).
+        </div>
+        <div id="o"><h2>Observation</h2>
+            A data point, row, or sample in a dataset. Another term for instance.
+            <h2>Outlier</h2>
+            An observation that deviates significantly from other observations in the dataset.
+            <h2>Overfitting</h2>
+            Overfitting occurs when your model learns the training data too well and incorporates details and noise specific to your dataset. You can tell a model is overfitting when it performs great on your training/validation set, but poorly on your test set (or new real-world data).
+            </div>
+            <div id="p"><h2>Parameters</h2>
+                Parameters are properties of training data learned by training a machine learning model or classifier. They are adjusted using optimization algorithms and unique to each experiment.
+                Examples of parameters include:
+                •	weights in an artificial neural network
+                •	support vectors in a support vector machine
+                •	coefficients in a linear or logistic regression
+                <h2>Precision</h2>
+                In the context of binary classification (Yes/No), precision measures the model’s performance at classifying positive observations (i.e. “Yes”). In other words, when a positive value is predicted, how often is the prediction correct? We could game this metric by only returning positive for the single observation we are most confident in.
+                                                        P=  (True Positives)/( TruePositives+FalsePositives)
+                </div>
+                <div id="r"><h2>Recall</h2>
+                    Also called sensitivity. In the context of binary classification (Yes/No), recall measures how “sensitive” the classifier is at detecting positive instances. In other words, for all the true observations in our sample, how many did we “catch.” We could game this metric by always classifying observations as positive.
+                                               R=(TruePositives)/( TruePositives+FalseNegatives)
+                    <h2>Regression</h2>
+                    Predicting a continuous output (e.g. price, sales).
+                   <h2> Regularization</h2>
+                    Regularization is a technique utilized to combat the overfitting problem. This is achieved by adding a complexity term to the loss function that gives a bigger loss for more complex models
+                    <h2>Reinforcement Learning</h2>
+                    Training a model to maximize a reward via iterative trial and error.
+                    </div>
+                    <div id="s"><h2>Segmentation</h2>
+                        It is the process of partitioning a data set into multiple distinct sets. This separation is done such that the members of the same set are similar to each other and different from the members of other sets.
+                        <h2>Specificity</h2>
+                        In the context of binary classification (Yes/No), specificity measures the model’s performance at classifying negative observations (i.e. “No”). In other words, when the correct label is negative, how often is the prediction correct? We could game this metric if we predict everything as negative.
+                                                  S=(TrueNegatives)/( TrueNegatives+FalsePositives)
+                        <h2>Supervised Learning</h2>
+                        Training a model using a labeled dataset
+                        </div>
+                        <div id="t"><h2>Test Set</h2>
+                            A set of observations used at the end of model training and validation to assess the predictive power of your model. How generalizable is your model to unseen data?
+                            <h2>Training Set</h2>
+                            A set of observations used to generate machine learning models.
+                            </div>
+                            <div id="u"><h2>Underfitting</h2>
+                                Underfitting occurs when your model over-generalizes and fails to incorporate relevant variations in your data that would give your model more predictive power. You can tell a model is underfitting when it performs poorly on both training and test sets.
+                                <h2>Unsupervised Learning</h2>
+                                Training a model to find patterns in an unlabeled dataset (e.g. clustering).
+                                </div>
+                                <div id="v"><h2>Validation Set</h2>
+                                    A set of observations used during model training to provide feedback on how well the current parameters generalize beyond the training set. If training error decreases but validation error increases, your model is likely overfitting and you should pause training.
+                                    <h2>Variance</h2>
+                                    How tightly packed are your predictions for a particular observation relative to each other?
+                                    •	Low variance suggests your model is internally consistent, with predictions varying little from each other after every iteration.
+                                    •	High variance (with low bias) suggests your model may be overfitting and reading too deeply into the noise found in every training set.
+                                    </div>
+    </div>
+</body>
+</html>

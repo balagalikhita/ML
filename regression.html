@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="classification.css">
+    <title>Regression</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="menu">
+            <h2 id="logo">Machine Learning</h2>
+            <a href="#introclassification">Regression</a>
+            
+            <a href="#naive">Linear Regression</a>
+            <a href="#knear">Decision tree regression</a>
+            <a href="#classificationappli">Applications of Regression</a>
+        </div>
+        <div class="sidebody">
+            <img src="images/logo.png" id="lo">
+            <a href="index.html">Back to Home</a>
+            <div id="title" style=" position: absolute;
+            left: 702px;"><b>REGRESSION</b></div>
+            </br>
+            </br>
+            </br>
+            <div class="introclassification" id="introclassification" style="height: 438px;">
+                <h3>Introduction</h3>
+                Regression analysis is a statistical method to model the relationship between a dependent (target) and independent (predictor) 
+                variables with one or more independent variables. More specifically, Regression analysis helps us to understand how the value of 
+                the dependent variable is changing corresponding to an independent variable when other independent variables are held fixed. 
+                It predicts continuous/real values such as temperature, age, salary, price, etc.
+                <br>
+                Some examples of regression can be as:
+                <br>
+                Prediction of rain using temperature and other factors
+                <br>
+             	Determining Market trends
+                 <br>
+             	Prediction of road accidents due to rash driving.
+                 <br>
+                 <h3>Why do we use Regression Analysis?</h3>
+                 As mentioned above, Regression analysis helps in the prediction of a continuous variable. 
+                 There are various scenarios in the real world where we need some future predictions such as weather condition, 
+                 sales prediction, marketing trends, etc., for such case we need some technology which can make predictions more accurately. 
+                 So for such case we need Regression analysis which is a statistical method and used in machine learning and data science. 
+                 Below are some other reasons for using Regression analysis:
+                <br>
+                Regression estimates the relationship between the target and the independent variable.
+                <br>
+               It is used to find the trends in data.
+               <br>
+               It helps to predict real/continuous values.
+               <br>
+               By performing the regression, we can confidently determine the most important factor, the least important factor, and how each factor is affecting the other factors.
+
+            </div>
+            </br>
+            <div class="type" style="height: 221px;">
+                <h3>TYPES OF REGRESSION</h3>
+                Linear Regression:
+                Linear regression shows the linear relationship between the independent variable (X-axis) and the 
+                dependent variable (Y-axis), hence called linear regression.
+                <br>
+                Logistic Regression:
+                Logistic regression algorithm works with the categorical variable such as 0 or 1, Yes or No, True or False, Spam or not spam, etc.
+                <br>
+                Polynomial Regression:
+                o	In Polynomial regression, the original features are transformed into polynomial features of given degree and then modeled using a linear model. 
+            </div>
+            </br>
+        
+            </br>
+            <div class="naive" id="naive">
+                <h3>Linear Regression</h3>
+                <p>Linear regression is a statistical regression method which is used for predictive analysis.</p>
+<p>It is one of the very simple and easy algorithms which works on regression and shows the relationship between the continuous variables.</p>
+<p>It is used for solving the regression problem in machine learning.</p>
+<p>Linear regression shows the linear relationship between the independent variable (X-axis) and the dependent variable (Y-axis), hence called linear regression.</p>
+<p>If there is only one input variable (x), then such linear regression is called simple linear regression. And if there is more than one input variable, then such linear regression is called multiple linear regression.</p>
+<p>The relationship between variables in the linear regression model can be explained using the below image. Here we are predicting the salary of an employee on the basis of the year of experience.</p>
+<p>Below is the mathematical equation for Linear regression:</p>
+1.Y= aX+b 
+<br> 
+Here, Y = dependent variables (target variables),
+<br>
+X= Independent variables (predictor variables),
+a and b are the linear coefficients
+<br>
+Some popular applications of linear regression are:
+<br>
+Analyzing trends and sales estimates
+<br>
+Salary forecasting
+<br>
+Real estate prediction
+<br>
+Arriving at ETAs in traffic.
+
+</div> </br>
+         
+           
+           
+            </br>
+            <div class="knear" id="knear">
+                <h3>Decision Tree</h3>
+                <p>Decision Tree is a supervised learning algorithm which can be used for solving both classification and regression problems.</p>
+                <p>It can solve problems for both categorical and numerical data</p>
+                <p>Decision Tree regression builds a tree-like structure in which each internal node represents the "test" for an attribute, each branch represent the result of the test, and each leaf node represents the final decision or result.</p>
+                <p>A decision tree is constructed starting from the root node/parent node (dataset), which splits into left and right child nodes (subsets of dataset). These child nodes are further divided into their children node, 
+                    and themselves become the parent node of those nodes.</p> 
+                
+            <p>Random forest is one of the most powerful supervised learning algorithms which is capable of performing regression as well as classification tasks.</p>
+    <p>The Random Forest regression is an ensemble learning method which combines multiple decision trees and predicts the final output based on the average of each tree output. The combined decision trees are called as base models, and it can be represented more formally as:
+     <br>               
+        g(x)= f0(x)+ f1(x)+ f2(x)+....
+        <br>
+        Random forest uses Bagging or Bootstrap Aggregation technique of ensemble learning in which aggregated decision tree runs in parallel and do not interact with each other.
+     <br>
+        With the help of Random Forest regression, we can prevent Overfitting in the model by creating random subsets of the dataset.
+                    
+
+            </div>
+            
+            
+            <div class="classificationappli" id="classificationappli" style="height: 414px;">
+                <h3>APPLICATIONS</h3>
+                <p>
+                    Forecasting Economic Trends:
+                    Economists use regression to predict future economic conditions, such as GDP growth, inflation rates, and unemployment rates.</p>
+<p>Demand and Supply Analysis: 
+    Regression models help in understanding how 
+    changes in price or other factors affect demand and supply for products or services.</p>
+    <p>Stock Price Prediction:Regression analysis is used to predict future stock prices based on historical data and other market indicators.</p>
+    <p>Sales Forecasting:
+         Businesses use regression to predict future sales based on factors such as advertising spend, 
+        price changes, and market conditions.</p>
+        <p>Disease Risk Prediction: Regression models are used to predict the likelihood of a disease occurrence based 
+            on risk factors such as age, weight, and genetic predispositions.</p>
+        <p>Climate Change Modeling: Regression is used to predict future climate conditions based on past data and trends, 
+            such as temperature and CO2 levels.</p>
+            <p>Property Valuation: Regression analysis helps in estimating property values based on features like location, size, and amenities.</p>
+            <p>Predicting Student Performance: Schools and universities use regression to predict student success based on factors such as attendance, grades, and 
+                socio-economic background.</p>
+                <p>Performance Prediction: Regression is used to predict the future performance of athletes or teams based on historical data and other performance indicators.</p>
+                <p>Studying Behavioral Trends: Researchers use regression to analyze social trends and the impact of policy changes on societal outcomes.</p>
+            </div>
+        </div>
+</body>
+
+</html>

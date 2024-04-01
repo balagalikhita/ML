@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="classification.css">
+    <title>Classification</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="menu">
+            <h2 id="logo">Machine Learning</h2>
+            <a href="#introclassification">Classification</a>
+            <a href="#svm">Support Vector Machines</a>
+            <a href="#naive">Naive Baye's</a>
+            <a href="#knear">K-Nearest Neighbours</a>
+            <a href="#classificationappli">Applications of Classification</a>
+        </div>
+        <div class="sidebody">
+            <img src="images/logo.png" id="lo">
+            <a href="index.html">Back to Home</a>
+            <div id="title" style=" position: absolute;
+            left: 702px;"><b>CLASSIFICATION</b></div>
+            </br>
+            </br>
+            </br>
+            <div class="introclassification" id="introclassification">
+                <h3>Introduction</h3>
+                The Classification algorithm is a Supervised Learning technique that is used to identify the category of
+                new observations on the basis of training data. In Classification, a program learns from the given
+                dataset or observations and then classifies new observation into a number of classes or groups. Such as,
+                Yes or No, 0 or 1, Spam or Not Spam, cat or dog, etc. Classes can be called as targets/labels or
+                categories.
+
+                Unlike regression, the output variable of Classification is a category, not a value, such as "Green or
+                Blue", "fruit or animal", etc. Since the Classification algorithm is a Supervised learning technique,
+                hence it takes labelled input data, which means it contains input with the corresponding output.
+
+                In classification algorithm, a discrete output function(y) is mapped to input variable(x).
+
+                y=f(x), where y=categorical output
+
+                The best example of an ML classification algorithm is Email Spam Detector.
+
+                The main goal of the Classification algorithm is to identify the category of a given dataset, and these
+                algorithms are mainly used to predict the output for the categorical data.
+
+                Classification algorithms can be better understood using the below diagram. In the below diagram, there
+                are two classes, class A and Class B. These classes have features that are similar to each other and
+                dissimilar to other classes.
+
+                The algorithm which implements the classification on a dataset is known as a classifier.
+            </div>
+            <img style="width: 445px;
+            position: absolute;
+            left: 988px;" src="/images/clas1.png" alt="">
+            </br>
+            <div class="type">
+                <h3>TYPES OF CLASSIFICATIONS</h3>
+                <p>Binary Classifier: If the classification problem has only two possible outcomes, then it is called as
+                    Binary Classifier</p>
+                Examples: YES or NO, MALE or FEMALE, SPAM or NOT SPAM, CAT or DOG, etc.
+
+                <p>Multi-class Classifier: If a classification problem has more than two outcomes, then it is called as
+                    Multi-class Classifier</p>
+                Example: Classifications of types of crops, Classification of types of music.
+            </div>
+            </br>
+            <img style="width: 445px;
+            position: absolute;
+            left: 988px; height: 267px;
+    border-radius: 23px;" src="/images/clas1.1.png" alt="">
+            <div class="division">
+                <h3>Types of ML Classification Algorithms: </h3>
+
+                Classification Algorithms can be further divided into the Mainly two category:
+
+                <h3>Linear Models </h3>
+
+                <p>Logistic Regression </p>
+
+                <p>Support Vector Machines </p>
+
+                <h3>Non-linear Models </h3>
+
+                <p>K-Nearest Neighbours </p>
+
+                <p>Kernel SVM</p>
+
+                <p>Naïve Bayes </p>
+
+                <p>Decision Tree Classification</p>
+
+                <p>Random Forest Classification</p>
+            </div>
+            </br>
+            <div class="svm" id="svm">
+
+                <div class="svmintro">
+                    <h3>SUPPORT VECTOR MACHINES</h3>
+                    <p>Support Vector Machine or SVM is one of the most popular Supervised Learning algorithms, which is
+                        used for Classification as well as Regression problems. However, primarily, it is used for
+                        Classification problems in Machine Learning.</p>
+
+                    <p>The goal of the SVM algorithm is to create the best line or decision boundary that can segregate
+                        n-dimensional space into classes so that we can easily put the new data point in the correct
+                        category in the future. This best decision boundary is called a hyperplane. </p>
+                    <p>Example: SVM can be understood with the example that we have used in the KNN classifier. Suppose
+                        we see a strange cat that also has some features of dogs, so if we want a model that can
+                        accurately identify whether it is a cat or dog, so such a model can be created by using the SVM
+                        algorithm. We will first train our model with lots of images of cats and dogs so that it can
+                        learn about different features of cats and dogs, and then we test it with this strange creature.
+                        So as support vector creates a decision boundary between these two data (cat and dog) and choose
+                        extreme cases (support vectors), it will see the extreme case of cat and dog.</p>
+                    <p>SVM algorithm can be used for Face detection, image classification, text categorization, etc.</p>
+                </div>
+                </br>
+                <div class="typesvm">
+                    <h3>Types of SVM </h3>
+                    <p>SVM can be of two types: </p>
+                    <p>Linear SVM: Linear SVM is used for linearly separable data, which means if a dataset can be
+                        classified into two classes by using a single straight line, then such data is termed as
+                        linearly separable data, and classifier is used called as Linear SVM classifier.</p>
+                    <p>Non-linear SVM: Non-Linear SVM is used for non-linearly separated data, which means if a dataset
+                        cannot be classified by using a straight line, then such data is termed as non-linear data and
+                        classifier used is called as Non-linear SVM classifier. </p>
+                </div>
+
+                </br>
+                <div class="work">
+                    <h3>How does SVM works? </h3>
+                    <b>Linear SVM:</b>
+                    <p>The working of the SVM algorithm can be understood by using an example. Suppose we have a dataset
+                        that has two tags (green and blue), and the dataset has two features x1 and x2. We want a
+                        classifier that can classify the pair(x1, x2) of coordinates in either green or blue. </p>
+                    <p>So as it is 2-d space so by just using a straight line, we can easily separate these two classes.
+                        But there can be multiple lines that can separate these classes.</p>
+                    <p>Hence, the SVM algorithm helps to find the best line or decision boundary; this best boundary or
+                        region is called as a hyperplane. SVM algorithm finds the closest point of the lines from both
+                        the classes. These points are called support vectors. The distance between the vectors and the
+                        hyperplane is called as margin. And the goal of SVM is to maximize this margin. The hyperplane
+                        with maximum margin is called the optimal hyperplane. </p>
+                    <b>Non-Linear SVM:</b>
+                    <p>If data is linearly arranged, then we can separate it by using a straight line, but for
+                        non-linear data, we cannot draw a single straight line.
+                    </p>
+                    <p>So to separate these data points, we need to add one more dimension. For linear data, we have
+                        used two dimensions x and y, so for non-linear data, we will add a third dimension z. It can be
+                        calculated as:
+                        z=x2 +y2
+                        Since we are in 3-d Space, hence it is looking like a plane parallel to the x-axis. If we
+                        convert it in 2d space with z=1, then it will become as:
+                        Hence we get a circumference of radius 1 in case of non-linear data.</p>
+                </div>
+                </br>
+                <div class="implementclass">
+                    <h3>Python Implementation of Support Vector Machine</h3>
+
+                    <p>Now we will implement the SVM algorithm using Python. Here we will use the same dataset
+                        user_data,
+                        which we have used in Logistic regression and KNN classification.</p>
+
+                    <h3>Data Pre-processing step</h3>
+
+                    <p>Till the Data pre-processing step, the code will remain the same. Below is the code:</p>
+
+                </div>
+
+                </br>
+                <img style="width: 477px;
+                position: absolute;
+                left: 988px;
+                height: 293px;
+                border-radius: 23px;" src="/images/class2.png" alt="">
+                <div class="scroll-block">
+                    <p>import numpy as nm</p>
+
+                    <p>import matplotlib.pyplot as mtp</p>
+
+                    <p>import pandas as pd</p>
+
+
+
+                    <p>#importing datasets </p>
+
+                    <p>data_set= pd.read_csv('/user_data.csv') </p>
+
+
+
+                    <p>#Extracting Independent and dependent Variable</p>
+
+                    <p>x= data_set.iloc[:, [2,3]].values</p>
+
+                    <p>y= data_set.iloc[:, 4].values </p>
+
+
+
+                    <p># Splitting the dataset into training and test set. </p>
+
+                    <p>from sklearn.model_selection import train_test_split</p>
+
+                    <p>x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.25, random_state=0)</p>
+
+                    <p>#feature Scaling</p>
+
+                    <p>from sklearn.preprocessing import StandardScaler</p>
+
+                    <p>st_x= StandardScaler()</p>
+
+                    <p>x_train= st_x.fit_transform(x_train) </p>
+                    <p>x_test= st_x.transform(x_test)</p>
+
+
+
+                    <p>print(data_set)</p>
+
+                    <p>print(x_test)</p>
+
+                    <p>print(y_test)</p>
+                </div>
+                </br>
+                <h2 class="output">OUTPUT</h2>
+                <div class="scroll-block">
+                    <p>User ID Gender Age EstimatedSalary Purchased</p>
+
+                    <p>0 15624510 Male 19 19000 0</p>
+
+                    <p>1 15810944 Male 35 20000 0</p>
+
+                    <p>2 15668575 Female 26 43000 0</p>
+
+                    <p>3 15603246 Female 27 57000 0</p>
+
+                    <p>4 15804002 Male 19 76000 0</p>
+
+                    <p>.. ... ... ... ... ...</p>
+
+                    <p>395 15691863 Female 46 41000 1</p>
+
+                    <p>396 15706071 Male 51 23000 1</p>
+
+                    <p>397 15654296 Female 50 20000 1</p>
+
+                    <p>398 15755018 Male 36 33000 0</p>
+
+                    <p>399 15594041 Female 49 36000 1</p>
+
+
+
+                    <p>[400 rows x 5 columns]</p>
+
+                    <p>[[-0.80480212 0.50496393]</p>
+
+                    <p>[-0.01254409 -0.5677824 ]</p>
+
+                    <p>[-0.30964085 0.1570462 ]</p>
+
+                    <p>[-0.80480212 0.27301877]</p>
+
+                    <p>[-0.30964085 -0.5677824 ]</p>
+
+                    <p>[-1.10189888 -1.43757673]</p>
+
+                    <p>[-0.70576986 -1.58254245]</p>
+
+                    <p>[-0.21060859 2.15757314]</p>
+
+                    <p>[-1.99318916 -0.04590581]</p>
+
+                    <p>[ 0.8787462 -0.77073441]</p>
+
+                    <p>[-0.80480212 -0.59677555]</p>
+
+                    <p>[-1.00286662 -0.42281668]</p>
+
+                    <p>[-0.11157634 -0.42281668]
+                    </p>
+                    <p>[ 0.08648817 0.21503249]</p>
+
+                    <p>[-1.79512465 0.47597078]</p>
+
+                    <p>[-0.60673761 1.37475825]</p>
+
+                    <p>[-0.11157634 0.21503249]</p>
+
+                    <p>[-1.89415691 0.44697764]</p>
+
+                    <p>[ 1.67100423 1.75166912]</p>
+
+                    <p>[-0.30964085 -1.37959044]</p>
+
+                    <p>[-0.30964085 -0.65476184]</p>
+
+                    <p>[ 0.8787462 2.15757314]</p>
+
+                    <p>[ 0.28455268 -0.53878926]</p>
+
+                    <p>[ 0.8787462 1.02684052]</p>
+
+                    <p>[-1.49802789 -1.20563157]</p>
+
+                    <p>[ 1.07681071 2.07059371]</p>
+
+                    <p>[-1.00286662 0.50496393]</p>
+
+                    <p>[-0.90383437 0.30201192]</p>
+
+                    <p>[-0.11157634 -0.21986468]</p>
+
+                    <p>[-0.60673761 0.47597078]</p>
+
+                    <p>[-1.6960924 0.53395707]</p>
+
+                    <p>[-0.11157634 0.27301877]</p>
+
+                    <p>[ 1.86906873 -0.27785096]</p>
+
+                    <p>[-0.11157634 -0.48080297]</p>
+
+                    <p>[-1.39899564 -0.33583725]</p>
+
+                    <p>[-1.99318916 -0.50979612]</p>
+
+                    <p>[-1.59706014 0.33100506]</p>
+
+                    <p>[-0.4086731 -0.77073441]</p>
+
+                    <p>[-0.70576986 -1.03167271]</p>
+
+                    <p>[ 1.07681071 -0.97368642]</p>
+
+                    <p>[-1.10189888 0.53395707]</p>
+
+                    <p>[ 0.28455268 -0.50979612]
+                    </p>
+                    <p>[-1.10189888 0.41798449]</p>
+
+                    <p>[-0.30964085 -1.43757673]</p>
+
+                    <p>[ 0.48261718 1.22979253]</p>
+
+                    <p>[-1.10189888 -0.33583725]</p>
+
+                    <p>[-0.11157634 0.30201192]
+                    </p>
+                    <p>[ 1.37390747 0.59194336]</p>
+
+                    <p>[-1.20093113 -1.14764529]
+                    </p>
+                    <p>[ 1.07681071 0.47597078]</p>
+
+                    <p>[ 1.86906873 1.51972397]</p>
+
+                    <p>[-0.4086731 -1.29261101]</p>
+
+                    <p>[-0.30964085 -0.3648304 ]</p>
+
+                    <p>[-0.4086731 1.31677196]</p>
+
+                    <p>[ 2.06713324 0.53395707]</p>
+
+                    <p>[ 0.68068169 -1.089659 ]
+                    </p>
+                    <p>[-0.90383437 0.38899135]</p>
+
+                    <p>[-1.39899564 0.56295021]</p>
+
+                    <P>[-1.10189888 -0.33583725]</P>
+
+                    <P>[ 0.18552042 -0.65476184]</P>
+
+                    <P>[ 0.38358493 0.01208048]</P>
+
+                    <P>[-0.60673761 2.331532 ]</P>
+
+                    <P>[-0.30964085 0.21503249]</P>
+
+                    <P>[-1.59706014 -0.19087153]</P>
+
+                    <P>[ 0.68068169 -1.37959044]]</P>
+
+                    <P>[0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 0 1 1 0 0 0 0
+                    </P>
+                    <P>0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 1</P>
+
+                    <P>0 0 0 0 1 1 1 0 0 0 1 1 0 1 1 0 0 1 0 0 0 1 0 1 1 1]</P>
+                </div>
+                </br>
+                <div class="implementclass">
+                    <p>Fitting the SVM classifier to the training set:</p>
+
+                    <p> Now the training set will be fitted to the SVM classifier. To create the SVM classifier, we will
+                        import</p>
+                    <p>SVC class from Sklearn.svm library. Below is the code for it:</p>
+                </div>
+                </br>
+                <div class="scroll-block"> from sklearn.svm import SVC # "Support vector classifier"  
+
+                    classifier = SVC(kernel='linear', random_state=0)  
+
+                    classifier.fit(x_train, y_train) <p> #In the above code, we have used kernel='linear', as here we
+                        are creating SVM for linearly separable data. However, we can change it for non-linear data. And
+                        then we fitted the classifier to the training</p> 
+                    <p>dataset(x_train, y_train)</p>
+                    <p>y_pred= classifier.predict(x_test) </p>
+                </div>
+                </br>
+                <h2 class="output">OUTPUT</h2>
+                <div class="scroll-block">Out[8]:
+
+                    SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+
+                    decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+
+                    kernel='linear', max_iter=-1, probability=False, random_state=0,
+
+                    shrinking=True, tol=0.001, verbose=False)
+                    <p>[0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0
+
+                        0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0
+
+                        0 0 1 0 1 1 1 1 0 0 1 1 0 1 0 0 0 1 0 0 0 0 0 0 1 1] </p>
+                </div>
+                </br>
+                <div class="implementclass" style="height:332px;left:590px;position:relative;">
+                    <h3>Creating the confusion matrix: </h3>
+                    <p>Now we will see the performance of the SVM classifier that how many incorrect predictions are
+                        there as compared to the Logistic regression classifier.</p>
+                    <p>To create the confusion matrix, we need to import the confusion_matrix function of the sklearn
+                        library. </p>
+                    <p>After importing the function, we will call it using a new variable cm. The function takes two
+                        parameters, mainly y_true( the actual values) and y_pred (the targeted value return by the
+                        classifier). </p>
+                    <div style="color:black;">
+                        <p>#Creating the Confusion matrix   </p>
+
+                        <p>from sklearn.metrics import confusion_matrix   </p>
+
+                        <p>cm= confusion_matrix(y_test, y_pred)  </p>
+
+                        <p> print(cm) </p>
+                        <p>OUTPUT</p>
+                        <p>[[66 2] </p>
+
+                        <p> [ 8 24]]</p>
+                    </div>
+
+
+                </div>
+                <h2 class="code" style="left:101px;">Visualizing the training set result:</h2>
+                </br>
+                <div class="scroll-block">
+                    <p># Now we will visualize the training set result, below is the code for it:</p>
+
+                    <p>from sklearn.svm import SVC</p>
+
+                    <p>from sklearn.model_selection import train_test_split</p>
+
+                    <p>import numpy as np</p>
+
+                    <p>import matplotlib.pyplot as plt</p>
+
+                    <p>from matplotlib.colors import ListedColormap</p>
+
+
+
+                    <p># Assuming you have x_train and y_train defined</p>
+
+                    <p># If not, replace these with your actual training data</p>
+
+                    <p>x_set, y_set = x_train, y_train</p>
+
+                    <p># Create an SVC instance and fit it with the training data</p>
+
+                    <p>classifier = SVC(kernel='linear', random_state=0)</p>
+
+                    <p>classifier.fit(x_set, y_set)</p>
+
+                    <p># Create a meshgrid for the contour plot</p>
+
+                    <p>x1, x2 = np.meshgrid(np.arange(start=x_set[:, 0].min() - 1, stop=x_set[:, 0].max() + 1,
+                        step=0.01),
+
+                        np.arange(start=x_set[:, 1].min() - 1, stop=x_set[:, 1].max() + 1, step=0.01))</p>
+
+                    <p># Plot the decision boundary and scatter plot of data points</p>
+
+                    <p>plt.contourf(x1, x2, classifier.predict(np.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+
+                        alpha=0.75, cmap=ListedColormap(('red', 'green')))</p>
+
+                    <p>plt.xlim(x1.min(), x1.max())</p>
+
+                    <p>plt.ylim(x2.min(), x2.max())</p>
+
+                    <p># Scatter plot for each class</p>
+
+                    <p>for i, j in enumerate(np.unique(y_set)):</p>
+
+                    <p>plt.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+
+                        c=ListedColormap(('red', 'green'))(i), label=str(j))</p>
+
+                    <p>plt.title('SVM classifier (Training set)')</p>
+
+                    <p>plt.xlabel('Age')</p>
+
+                    <p>plt.ylabel('Estimated Salary')</p>
+
+                    <p>plt.legend()</p>
+
+                    <p>plt.show()</p>
+                </div>
+                <img style="width: 319px;
+                position: absolute;
+                left: 729px;top: 3450px;" src="images/str.jpeg" alt="">
+                <h2 class="code" style="left:101px;">Visualizing the test set result: </h2>
+                </br>
+                <img style="width: 319px;
+                position: absolute;
+                left: 1076px;
+                top: 3450px;" src="images/st.jpeg" alt="">
+                <div class="scroll-block">
+                    <p># Assuming you have x_test and y_test defined</p>
+
+                    <p> # If not, replace these with your actual test data</p>
+
+                    <p>x_set, y_set = x_test, y_test  </p>
+
+
+
+                    <p># Create a meshgrid for the contour plot</p>
+
+                    <p>x1, x2 = np.meshgrid(np.arange(start=x_set[:, 0].min() - 1, stop=x_set[:, 0].max() + 1,
+                        step=0.01),
+
+                                             np.arange(start=x_set[:, 1].min() - 1, stop=x_set[:, 1].max() + 1,
+                        step=0.01))</p>
+
+
+
+                    <p># Plot the decision boundary and scatter plot of data points for the test set</p>
+
+                    <p>plt.contourf(x1, x2, classifier.predict(np.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+
+                                     alpha=0.75, cmap=ListedColormap(('red', 'green')))</p>
+
+                    <p>plt.xlim(x1.min(), x1.max())</p>
+
+                    <p>plt.ylim(x2.min(), x2.max())</p>
+
+
+
+                    <p># Scatter plot for each class in the test set</p>
+
+                    <p>for i, j in enumerate(np.unique(y_set)):</p>
+
+                    <p>    plt.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+
+                                        c=ListedColormap(('red', 'green'))(i), label=str(j))</p>
+
+
+
+                    <p>plt.title('SVM classifier (Test set)')</p>
+
+                    <p>plt.xlabel('Age')</p>
+
+                    <p>plt.ylabel('Estimated Salary')</p>
+
+                    <p>plt.legend()</p>
+
+                    <p>plt.show()</p>
+                </div>
+
+            </div>
+            </br>
+            <div class="naive" id="naive">
+                <h3>Naïve Bayes Classifier Algorithm</h3>
+
+                <p>Naïve Bayes algorithm is a supervised learning algorithm, which is based on Bayes theorem and used
+                    for
+                    solving classification problems.</p>
+
+                <p>It is mainly used in text classification that includes a high-dimensional training dataset.</p>
+
+                <p>Naïve Bayes Classifier is one of the simple and most effective Classification algorithms which helps
+                    in
+                    building the fast machine learning models that can make quick predictions.</p>
+
+                <p>It is a probabilistic classifier, which means it predicts on the basis of the probability of an
+                    object.</p>
+
+                <p>Some popular examples of Naïve Bayes Algorithm are spam filtration, Sentimental analysis, and
+                    classifying articles.</p>
+
+                <p>Bayes' Theorem:</p>
+
+                <p>Bayes' theorem is also known as Bayes' Rule or Bayes' law, which is used to determine the probability
+                    of
+                    a hypothesis with prior knowledge. It depends on the conditional probability.</p>
+
+                <p>The formula for Bayes' theorem is given as:</p>
+
+                <p>Naïve Bayes Classifier Algorithm</p>
+
+                <p>Where,</p>
+
+                <p>P(A|B) is Posterior probability: Probability of hypothesis A on the observed event B.</p>
+
+                <p>P(B|A) is Likelihood probability: Probability of the evidence given that the probability of a
+                    hypothesis
+                    is true.</p>
+
+                <p>P(A) is Prior Probability: Probability of hypothesis before observing the evidence.</p>
+
+                <p>P(B) is Marginal Probability: Probability of Evidence.</p>
+            </div> </br>
+            <div class="implementclass" style="width: 636px;
+           height: 510px;">
+                <h3>Working of Naïve Bayes' Classifier:</h3>
+
+                <p>Working of Naïve Bayes' Classifier can be understood with the help of the below example:</p>
+
+                <p>Suppose we have a dataset of weather conditions and corresponding target variable "Play". So using
+                    this dataset we need to decide that whether we should play or not on a particular day according to
+                    the weather conditions. So to solve this problem, we need to follow the below steps: </p>
+
+                <p>Convert the given dataset into frequency tables. </p>
+
+                <p>Generate Likelihood table by finding the probabilities of given features. </p>
+
+                <p>Now, use Bayes theorem to calculate the posterior probability. </p>
+
+                <p>
+                <h3>Advantages of Naïve Bayes Classifier:</h3>
+                </p>
+
+                <p>Naïve Bayes is one of the fast and easy ML algorithms to predict a class of datasets. </p>
+
+                <p>It can be used for Binary as well as Multi-class Classifications. </p>
+
+                <p>It performs well in Multi-class predictions as compared to the other Algorithms.</p>
+
+                <p>It is the most popular choice for text classification problems. </p>
+
+                <p>
+                <h3>Disadvantages of Naïve Bayes Classifier:</h3>
+                </p>
+
+                <p>Naive Bayes assumes that all features are independent or unrelated, so it cannot learn the
+                    relationship between features. </p>
+
+                <p>
+                <h3>Applications of Naïve Bayes Classifier: </h3>
+                </p>
+
+                <p>It is used for Credit Scoring.</p>
+
+                <p>It is used in medical data classification.</p>
+
+                <p>It can be used in real-time predictions because Naïve Bayes Classifier is an eager learner. </p>
+
+                <p>It is used in Text classification such as Spam filtering and Sentiment analysis.</p>
+            </div>
+            </br>
+       
+            <img style="width: 477px;
+            position: absolute;
+            left: 266px;
+            height: 293px;
+            border-radius: 23px;" src="/images/class3.png" alt="">
+            <div class="implementclass" style="position: relative;
+         left: 579px;height: 289px;">
+                <h3>Python Implementation of the Naïve Bayes algorithm: </h3>
+
+                <P>Now we will implement a Naive Bayes Algorithm using Python. So for this, we will use the "user_data"
+                    dataset, which we have used in our other classification model. Therefore we can easily compare the
+                    Naive Bayes model with the other models. </P>
+
+                <P> Steps to implement: </P>
+
+                <P> Data Pre-processing step </P>
+
+                <P>Fitting Naive Bayes to the Training set</P>
+
+                <P>Predicting the test result </P>
+
+                <P>Test accuracy of the result(Creation of Confusion matrix) </P>
+
+                <P>Visualizing the test set result. </P>
+
+                <P> 1) Data Pre-processing step: </P>
+
+                <P>In this step, we will pre-process/prepare the data so that we can use it efficiently in our code.</P>
+            </div>
+            </br>
+            <div class="scroll-block" style="position: relative;
+            left: 400px;">
+                <p>import numpy as nm</p>
+
+                <p> import matplotlib.pyplot as mtp</p>
+
+                <p>import pandas as pd </p>
+
+
+
+                <p># Importing the dataset</p>
+
+                <p>dataset = pd.read_csv('/content/User_Data[1].csv')</p>
+
+                <p>x = dataset.iloc[:, [2, 3]].values </p>
+
+                <p>y = dataset.iloc[:, 4].values </p>
+
+
+
+                <p># Splitting the dataset into the Training set and Test set </p>
+
+                <p>from sklearn.model_selection import train_test_split </p>
+
+                <p>x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.25, random_state = 0) </p>
+
+
+
+                <p># Feature Scaling </p>
+
+                <p>from sklearn.preprocessing import StandardScaler </p>
+
+                <p>sc = StandardScaler() </p>
+
+                <p>x_train = sc.fit_transform(x_train) </p>
+
+                <p>x_test = sc.transform(x_test) </p>
+
+                <p>print(data_set)</p>
+
+                <p>print(x_test)</p>
+
+                <p>print(y_test)</p>
+            </div>
+            </br>
+            <h2 class="output" style="position: relative;
+            left: 632px;">OUTPUT</h2>
+            <div class="scroll-block" style="position: relative;
+            left: 400px;">
+                <p>User ID Gender Age EstimatedSalary Purchased</p>
+
+                <p>0 15624510 Male 19 19000 0</p>
+
+                <p>1 15810944 Male 35 20000 0</p>
+
+                <p>2 15668575 Female 26 43000 0</p>
+
+                <p>3 15603246 Female 27 57000 0</p>
+
+                <p>4 15804002 Male 19 76000 0</p>
+
+                <p> .. ... ... ... ... ...</p>
+
+                <p>395 15691863 Female 46 41000 1</p>
+
+                <p>396 15706071 Male 51 23000 1</p>
+
+                <p>397 15654296 Female 50 20000 1</p>
+
+                <p>398 15755018 Male 36 33000 0</p>
+
+                <p>399 15594041 Female 49 36000 1</p>
+
+
+
+                <p>[400 rows x 5 columns]</p>
+
+                <p> [[-0.80480212 0.50496393]</p>
+
+                <p>[-0.01254409 -0.5677824 ]</p>
+
+                <p>[-0.30964085 0.1570462 ]</p>
+
+                <p>[-0.80480212 0.27301877]</p>
+
+                <p>[-0.30964085 -0.5677824 ]</p>
+
+                <p>[-1.10189888 -1.43757673]</p>
+
+                <p>[-0.70576986 -1.58254245]</p>
+
+                <p>[-0.21060859 2.15757314]
+                </p>
+                <p>[-1.99318916 -0.04590581]</p>
+
+                <p>[ 0.8787462 -0.77073441]
+                </p>
+                <p>[-0.80480212 -0.59677555]</p>
+
+                <p>[-1.00286662 -0.42281668]</p>
+
+                <p>[-0.11157634 -0.42281668]</p>
+
+                <p>[ 0.08648817 0.21503249]
+                </p>
+                <p>[-1.79512465 0.47597078]
+                </p>
+                <p>[-0.60673761 1.37475825]
+                </p>
+                <p>[-0.11157634 0.21503249]
+                </p>
+                <p>[-1.89415691 0.44697764]
+                </p>
+                <p>[ 1.67100423 1.75166912]
+                </p>
+                <p>[-0.30964085 -1.37959044]</p>
+
+                <p>[-0.30964085 -0.65476184]</p>
+
+                <p>[ 0.8787462 2.15757314]
+
+                </p>
+                <p>[ 0.28455268 -0.53878926]</p>
+
+                <p>[ 0.8787462 1.02684052]
+
+                </p>
+                <p>[-1.49802789 -1.20563157]</p>
+
+                <p>[ 1.07681071 2.07059371]
+                </p>
+                <p>[-1.00286662 0.50496393]
+                </p>
+                <p>[-0.90383437 0.30201192]
+                </p>
+                <p>[-0.11157634 -0.21986468]</p>
+
+                <p>[-0.60673761 0.47597078]
+                </p>
+                <p>[-1.6960924 0.53395707]
+
+                </p>
+                <p>[-0.11157634 0.27301877]
+                </p>
+                <p>[ 1.86906873 -0.27785096]</p>
+
+                <p>[-0.11157634 -0.48080297]</p>
+
+                <p>[-1.39899564 -0.33583725]</p>
+
+                <p>[-1.99318916 -0.50979612]</p>
+
+                <p>[-1.59706014 0.33100506]
+                </p>
+                <p>[-0.4086731 -0.77073441]
+                </p>
+                <p>[-0.70576986 -1.03167271]</p>
+
+                <p>[ 1.07681071 -0.97368642]</p>
+
+                <p>[-1.10189888 0.53395707]
+                </p>
+                <p>[ 0.28455268 -0.50979612]</p>
+
+                <p>[-1.10189888 0.41798449]
+                </p>
+                <p>[-0.30964085 -1.43757673]</p>
+
+                <p> [ 0.48261718 1.22979253]</p>
+
+                <p> [-1.10189888 -0.33583725]
+                </p>
+                <p> [-0.11157634 0.30201192]</p>
+
+                <p> [ 1.37390747 0.59194336]</p>
+
+                <p> [-1.20093113 -1.14764529]</p>
+
+                <p> [ 1.07681071 0.47597078]</p>
+
+                <p> [ 1.86906873 1.51972397]</p>
+
+                <p> [-0.4086731 -1.29261101]</p>
+
+                <p> [-0.30964085 -0.3648304 ]</p>
+
+                <p> [-0.4086731 1.31677196]</p>
+
+
+                <p> [ 0.68068169 -1.089659 ]</p>
+
+                <p> [-0.90383437 0.38899135]</p>
+
+                <p> [-1.39899564 0.56295021]</p>
+
+                <p> [-1.10189888 -0.33583725]
+                </p>
+                <p> [ 0.18552042 -0.65476184]</p>
+
+                <p>
+                    [ 0.38358493 0.01208048]</p>
+
+                <p> [-0.60673761 2.331532 ]</p>
+
+                <p> [-0.30964085 0.21503249]</p>
+
+                <p> [-1.59706014 -0.19087153]</p>
+
+                <p> [ 0.68068169 -1.37959044]]</p>
+
+                <p> [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 0 1 1 0 0 0 0
+
+                    0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 1
+
+                    0 0 0 0 1 1 1 0 0 0 1 1 0 1 1 0 0 1 0 0 0 1 0 1 1 1] </p>
+            </div>
+            <div class="implementclass" style="height:452px;">
+                <h3>Fitting Naive Bayes to the Training Set:</h3>
+
+                <p> After the pre-processing step, now we will fit the Naive Bayes model to the Training set. Below is
+                    the</p>
+                <p> code for it:</p>
+                <div style="color:#69dae6;">
+                    <p># Fitting Naive Bayes to the Training set  </p>
+
+                    <p>from sklearn.naive_bayes import GaussianNB  </p>
+
+                    <p>classifier = GaussianNB()  </p>
+
+                    <p>classifier.fit(x_train, y_train)  </p>
+
+                    <p>In the above code, we have used the GaussianNB classifier to fit it to the training dataset. We
+                        can also
+                        use other classifiers as per our requirement.</p>
+
+                    <p>Output:</p>
+
+                    <p>Out[6]: GaussianNB(priors=None, var_smoothing=1e-09)</p># Predicting the Test set results  
+
+                    <p> y_pred = classifier.predict(x_test)   </p>
+
+                    <p>print(y_pred) </p>
+
+                    <p>print(y_test) </p>
+                    <p>[0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0
+
+                        0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 1 1 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0
+
+                        0 0 0 0 1 1 1 1 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 1 1 1] </p>
+
+                    <p>[0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 0 1 1 0 0 0 0
+
+                        0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 1
+
+                        0 0 0 0 1 1 1 0 0 0 1 1 0 1 1 0 0 1 0 0 0 1 0 1 1 1] </p>
+                </div>
+            </div>
+            </br>
+            <div class="implementclass" style="height:232px;">
+                <h3>Creating Confusion Matrix:</h3>
+
+                <p>Now we will check the accuracy of the Naive Bayes classifier using the Confusion matrix. Below is
+                    the</p>
+                <p>code for it:</p>
+                <div style="color:#69dae6;">
+                    <p># Making the Confusion Matrix  </p>
+
+                    <p>from sklearn.metrics import confusion_matrix  </p>
+
+                    <p>cm = confusion_matrix(y_test, y_pred)  </p>
+
+                    <p>print(cm)</p>
+
+                    <p>output:</p>
+
+                    <p>[[65 3]</p>
+
+                    <p>[ 7 25]]</p>
+                </div>
+            </div>
+            </br>
+            <h2 class="code" style="position: relative;
+        left: 678px;">Visualising the Training set results</h2>
+            </br>
+            <div class="scroll-block" style="position: relative;
+            left: 452px;">
+                <p># Visualising the Training set results</p>
+
+                <p>from matplotlib.colors import ListedColormap</p>
+
+                <p>import matplotlib.pyplot as plt</p>
+
+                <p>import numpy as np</p>
+
+
+
+                <p>x_set, y_set = x_train, y_train</p>
+
+                <p>x1, x2 = np.meshgrid(np.arange(start=x_set[:, 0].min() - 1, stop=x_set[:, 0].max() + 1, step=0.01),
+
+                    np.arange(start=x_set[:, 1].min() - 1, stop=x_set[:, 1].max() + 1, step=0.01))</p>
+
+
+
+                <p># Plot the decision boundary</p>
+
+                <p>plt.contourf(x1, x2, classifier.predict(np.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+
+                    alpha=0.75, cmap=ListedColormap(('purple', 'green')))</p>
+
+
+
+                <p># Set axis limits</p>
+
+                <p>plt.xlim(x1.min(), x1.max())</p>
+
+                <p>plt.ylim(x2.min(), x2.max())</p>
+
+
+
+                <p># Scatter plot for each class</p>
+
+                <p>for i, j in enumerate(np.unique(y_set)):</p>
+
+                <p>plt.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+
+                    c=ListedColormap(('purple', 'green'))(i), label=str(j))</p>
+
+
+
+                <p># Set plot title and labels</p>
+
+                <p>plt.title('Naive Bayes (Training set)')</p>
+
+                <p>plt.xlabel('Age')</p>
+
+                <p>plt.ylabel('Estimated Salary')</p>
+
+                <p>plt.legend()</p>
+
+
+
+                <p># Display the plot</p>
+
+                <p>plt.show()</p>
+
+
+            </div>
+            <img style="position: absolute;
+            top: 6250px;
+            width: 319px;
+            left: 229px;" src="images/ntr.jpeg" alt="">
+            </br>
+            <h2 class="code" style="position: relative;
+        left: 678px;">Visualising the Test set results</h2>
+            </br>
+            <div class="scroll-block" style="position: relative;
+            left: 452px;">
+                <p># Visualising the Test set results</p>
+
+                <p>from matplotlib.colors import ListedColormap</p>
+
+                <p>import matplotlib.pyplot as plt</p>
+
+                <p>import numpy as np</p>
+
+
+
+                <p>x_set, y_set = x_test, y_test</p>
+
+                <p>x1, x2 = np.meshgrid(np.arange(start=x_set[:, 0].min() - 1, stop=x_set[:, 0].max() + 1, step=0.01),
+
+                    np.arange(start=x_set[:, 1].min() - 1, stop=x_set[:, 1].max() + 1, step=0.01))</p>
+
+
+
+                <p># Plot the decision boundary</p>
+
+                <p>plt.contourf(x1, x2, classifier.predict(np.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+
+                    alpha=0.75, cmap=ListedColormap(('purple', 'green')))</p>
+
+
+
+                <p># Set axis limits</p>
+
+                <p>plt.xlim(x1.min(), x1.max())</p>
+
+                <p>plt.ylim(x2.min(), x2.max())</p>
+
+
+
+                <p># Scatter plot for each class</p>
+
+                <p>for i, j in enumerate(np.unique(y_set)):</p>
+
+                <p>plt.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+
+                    c=ListedColormap(('purple', 'green'))(i), label=str(j))
+                </p>
+
+
+                <p># Set plot title and labels</p>
+
+                <p>plt.title('Naive Bayes (Test set)')</p>
+
+                <p>plt.xlabel('Age')</p>
+
+                <p>plt.ylabel('Estimated Salary')</p>
+
+                <p>plt.legend()</p>
+
+
+
+                <p># Display the plot</p>
+
+                <p>plt.show() </p>
+            </div>
+            <img style="  position: absolute;
+            top: 6250px;
+            width: 319px;
+            left: 560px;" src="images/nt.jpeg" alt="">
+            </br>
+            
+            <div class="knear" id="knear">
+                <h3>K-Nearest Neighbour</h3>
+                <p>K-Nearest Neighbour is one of the simplest Machine Learning algorithms based on Supervised Learning
+                    technique. </p>
+
+                <p>K-NN algorithm assumes the similarity between the new case/data and available cases and put the new
+                    case into the category that is most similar to the available categories.</p>
+
+                <p>K-NN algorithm stores all the available data and classifies a new data point based on the similarity.
+                    This means when new data appears then it can be easily classified into a well suite category by
+                    using K- NN algorithm. </p>
+
+                <p> K-NN algorithm can be used for Regression as well as for Classification but mostly it is used for
+                    the Classification problems. </p>
+
+                <p>K-NN is a non-parametric algorithm, which means it does not make any assumption on underlying data.
+                </p>
+
+                <p>It is also called a lazy learner algorithm because it does not learn from the training set
+                    immediately instead it stores the dataset and at the time of classification, it performs an action
+                    on the dataset.</p>
+
+                <p>KNN algorithm at the training phase just stores the dataset and when it gets new data, then it
+                    classifies that data into a category that is much similar to the new data.</p>
+            </div>
+            
+            <div class="implementclass" style="position: relative;
+            top: -73px;
+            left: 455px;height: 231px;">
+                <h3>How does K-NN work?</h3>
+
+                <p> The K-NN working can be explained on the basis of the below algorithm: </p>
+
+                <p>Step-1: Select the number K of the neighbours </p>
+
+                <p>Step-2: Calculate the Euclidean distance of K number of neighbours </p>
+
+                <p>Step-3: Take the K nearest neighbours as per the calculated Euclidean distance. </p>
+
+                <p>Step-4: Among these k neighbours, count the number of the data points in each category.</p>
+
+                <p>Step-5: Assign the new data points to that category for which the number of the neighbour is maximum.
+                </p>
+
+                <p>Step-6: Our model is ready.</p>
+            </div>
+            <div class="implementclass" style="height:194px;
+                position: relative;
+                top: -52px;">
+                <h3>How to select the value of K in the K-NN Algorithm?</h3>
+
+                <p>Below are some points to remember while selecting the value of K in the K-NN algorithm:</p>
+
+                <p>There is no particular way to determine the best value for "K", so we need to try some values to find
+                    the best out of them. The most preferred value for K is 5. </p>
+
+                <p>A very low value for K such as K=1 or K=2, can be noisy and lead to the effects of outliers in the
+                    model. </p>
+
+                <p>Large values for K are good, but it may find some difficulties.</p>
+            </div>
+            <div class="implementclass" style="height: 195px;
+                    position: relative;
+                    top: -292px;
+                    left: 667px;
+                    width: 500px;">
+                <h3>Advantages of KNN Algorithm: </h3>
+
+                <p>It is simple to implement. </p>
+
+                <p>It is robust to the noisy training data </p>
+
+                <p>It can be more effective if the training data is large.</p>
+
+                <h3>Disadvantages of KNN Algorithm:</h3>
+
+                <p> Always needs to determine the value of K which may be complex some time. </p>
+
+                <p>The computation cost is high because of calculating the distance between the data points for all the
+                    training samples.</p>
+            </div>
+            <div class="implementclass" style="bottom: 213px;height: 288px;
+                        position: relative;">
+                <h3>Python implementation of the KNN algorithm </h3>
+
+                <p>Problem for K-NN Algorithm: There is a Car manufacturer company that has manufactured a new SUV car.
+                    The company wants to give the ads to the users who are interested in buying that SUV. So for this
+                    problem, we have a dataset that contains multiple user's information through the social network. The
+                    dataset contains lots of information but the Estimated Salary and Age we will consider for the
+                    independent variable and the Purchased variable is for the dependent variable </p>
+
+                <p>Steps to implement the K-NN algorithm: </p>
+
+                <p>Data Pre-processing step </p>
+
+                <p>Fitting the K-NN algorithm to the Training set </p>
+
+                <p>Predicting the test result </p>
+
+                <p>Test accuracy of the result(Creation of Confusion matrix) </p>
+
+                <p>Visualizing the test set result.</p>
+            </div>
+            <img style="width: 424px;
+            position: absolute;
+            left: 997px;
+            height: 294px;" src="/images/class4.png" alt="">
+            <h2 class="code" style="position: relative;
+            bottom: 158px;
+            left: 124px;">Data Pre-processing step </h2>
+            <div class="scroll-block" style="position: relative;
+            bottom: 136px;">
+                <p>import numpy as nm </p>
+
+                <p>import matplotlib.pyplot as mtp </p>
+
+                <p>import pandas as pd </p>
+
+
+
+                <p>#importing datasets </p>
+
+                <p>data_set= pd.read_csv('/user_data.csv') </p>
+
+
+
+                <p>#Extracting Independent and dependent Variable </p>
+
+                <p>x= data_set.iloc[:, [2,3]].values </p>
+
+                <p>y= data_set.iloc[:, 4].values </p>
+
+
+
+                <p> # Splitting the dataset into training and test set. </p>
+
+                <p>from sklearn.model_selection import train_test_split </p>
+
+                <p>x_train, x_test, y_train, y_test= train_test_split(x, y, test_size= 0.25, random_state=0) </p>
+
+                <p>#feature Scaling </p>
+
+                <p>from sklearn.preprocessing import StandardScaler </p>
+
+                <p>st_x= StandardScaler() </p>
+
+                <p>x_train= st_x.fit_transform(x_train) </p>
+
+                <p>x_test= st_x.transform(x_test) </p>
+
+
+
+                <p>print(data_set)</p>
+
+                <p>print(x_test)</p>
+
+                <p>print(y_test)</p>
+            </div>
+            <h2 class="code" style="position: relative;
+                bottom: 98px;
+                left: 124px;">OUTPUT</h2>
+            <div class="scroll-block" style="bottom: 79px;position: relative;">
+                <p>User ID Gender Age EstimatedSalary Purchased </p>
+
+                <p>0 15624510 Male 19 19000 0 </p>
+
+                <p>1 15810944 Male 35 20000 0 </p>
+
+                <p>2 15668575 Female 26 43000 0 </p>
+
+                <p>3 15603246 Female 27 57000 0 </p>
+
+                <p>4 15804002 Male 19 76000 0 </p>
+
+                <p>.. ... ... ... ... ... </p>
+
+                <p>395 15691863 Female 46 41000 1 </p>
+
+                <p>396 15706071 Male 51 23000 1 </p>
+
+                <p>397 15654296 Female 50 20000 1 </p>
+
+                <p>398 15755018 Male 36 33000 0</p>
+
+                <p>399 15594041 Female 49 36000 1 </p>
+
+
+
+                <p>[400 rows x 5 columns] </p>
+
+                <p>[[-0.80480212 0.50496393] </p>
+
+                <p>[-0.01254409 -0.5677824 ] </p>
+
+                <p>[-0.30964085 0.1570462 ] </p>
+
+                <p>[-0.80480212 0.27301877] </p>
+
+                <p>[-0.30964085 -0.5677824 ] </p>
+
+                <p>[-1.10189888 -1.43757673] </p>
+
+                <p>[-0.70576986 -1.58254245] </p>
+
+                <p>[-0.21060859 2.15757314] </p>
+
+                <p>[-1.99318916 -0.04590581] </p>
+
+                <p>[ 0.8787462 -0.77073441] </p>
+
+                <p>[-0.80480212 -0.59677555] </p>
+
+                <p>[-1.00286662 -0.42281668] </p>
+
+                <p>[-0.11157634 -0.42281668]</p>
+
+                <p> [ 0.08648817 0.21503249] </p>
+
+                <p> [-1.79512465 0.47597078] </p>
+
+                <p> [-0.60673761 1.37475825] </p>
+
+                <p> [-0.11157634 0.21503249] </p>
+
+                <p> [-1.89415691 0.44697764] </p>
+
+                <p> [ 1.67100423 1.75166912] </p>
+
+                <p> [-0.30964085 -1.37959044] </p>
+
+                <p> [-0.30964085 -0.65476184] </p>
+
+                <p> [ 0.8787462 2.15757314] </p>
+
+                <p> [ 0.28455268 -0.53878926] </p>
+
+                <p> [ 0.8787462 1.02684052] </p>
+
+                <p> [-1.49802789 -1.20563157] </p>
+
+                <p> [ 1.07681071 2.07059371] </p>
+
+                <p> [-1.00286662 0.50496393] </p>
+
+                <p> [-0.90383437 0.30201192] </p>
+
+                <p> [-0.11157634 -0.21986468] </p>
+
+                <p> [-0.60673761 0.47597078] </p>
+
+                <p> [-1.6960924 0.53395707] </p>
+
+                <p> [-0.11157634 0.27301877] </p>
+
+                <p> [ 1.86906873 -0.27785096] </p>
+
+                <p> [-0.11157634 -0.48080297] </p>
+
+                <p> [-1.39899564 -0.33583725] </p>
+
+                <p> [-1.99318916 -0.50979612] </p>
+
+                <p> [-1.59706014 0.33100506] </p>
+
+                <p> [-0.4086731 -0.77073441] </p>
+
+                <p> [-0.70576986 -1.03167271] </p>
+
+                <p> [ 1.07681071 -0.97368642]</p>
+
+                <p> [-1.10189888 0.53395707]</p>
+
+                <p> [ 0.28455268 -0.50979612]</p>
+
+                <p> [-1.10189888 0.41798449] </p>
+
+                <p> [-0.30964085 -1.43757673] </p>
+
+                <p> [ 0.48261718 1.22979253] </p>
+
+                <p> [-1.10189888 -0.33583725] </p>
+
+                <p> [-0.11157634 0.30201192] </p>
+
+                <p> [ 1.37390747 0.59194336] </p>
+
+                <p> [-1.20093113 -1.14764529] </p>
+
+                <p> [ 1.07681071 0.47597078] </p>
+
+                <p> [ 1.86906873 1.51972397] </p>
+
+                <p> [-0.4086731 -1.29261101] </p>
+
+                <p> [-0.30964085 -0.3648304 ] </p>
+
+                <p> [-0.4086731 1.31677196] </p>
+
+                <p> [ 2.06713324 0.53395707] </p>
+
+                <p> [ 0.68068169 -1.089659 ] </p>
+
+                <p> [-0.90383437 0.38899135] </p>
+
+                <p>[-1.39899564 0.56295021] </p>
+
+                <p> [-1.10189888 -0.33583725] </p>
+
+                <p> [ 0.18552042 -0.65476184] </p>
+
+                <p> [ 0.38358493 0.01208048] </p>
+
+                <p>[-0.60673761 2.331532 ] </p>
+
+                <p> [-0.30964085 0.21503249] </p>
+
+                <p>[-1.59706014 -0.19087153] </p>
+
+                <p>[ 0.68068169 -1.37959044]] </p>
+
+                <p>[0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 0 1 1 0 0 0 0
+
+                    0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 1
+
+                    0 0 0 0 1 1 1 0 0 0 1 1 0 1 1 0 0 1 0 0 0 1 0 1 1 1] </p>
+
+            </div>
+            <div class="implementclass" style="height:516px;">
+                <h3>Fitting K-NN classifier to the Training data: </h3>
+                <p>Now we will fit the K-NN classifier to the training data. To do this we will import the
+                    KNeighborsClassifier class of Sklearn Neighbors library. After importing the class, we will create
+                    the Classifier object of the class.</p>
+                <p>The Parameter of this class will be
+
+                    n_neighbors: To define the required neighbors of the algorithm. Usually, it takes 5. </p>
+
+                <p>metric='minkowski': This is the default parameter and it decides the distance between the points.
+                </p>
+
+                <p>p=2: It is equivalent to the standard Euclidean metric. </p>
+
+                <p>And then we will fit the classifier to the training data. Below is the code for it:</p>
+                <div>
+                    <p>#Fitting K-NN classifier to the training set</p>
+
+                    <p> from sklearn.neighbors import KNeighborsClassifier</p>
+
+                    <p>classifier= KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2 )</p>
+
+                    <p>classifier.fit(x_train, y_train)</p>
+                    <p>Output:</p>
+
+                    <p>KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+
+                        metric_params=None, n_jobs=None, n_neighbors=5, p=2,
+
+                        weights='uniform')</p>
+                    <p>#Predicting the test set result
+                    </p>
+                    <p>y_pred= classifier.predict(x_test)</p>
+
+                    <p>print(y_pred)</p>
+                    <p>output</p>
+                    <p>[0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0
+
+                        0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 1 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 1
+
+                        0 0 0 0 1 1 1 1 0 0 1 0 0 1 1 0 0 1 0 0 0 0 0 1 1 1]</p>
+                </div>
+            </div>
+            <div class="implementclass" style="height: 216px;
+            position: relative;
+            left: 607px;">Creating the Confusion Matrix:
+                <p>Now we will create the Confusion Matrix for our K-NN model to see the accuracy of the classifier.</p>
+                <p>Below is the code for it: </p>
+                <div>
+                    <p>#Creating the Confusion ma</p>
+
+                    <p>from sklearn.metrics import confusion_ma</p>
+
+                    <p>cm= confusion_matrix(y_test, y_pred)</p>
+
+                    <p>output: </p>
+
+                    <p>[[64 4] </p>
+
+                    <p>[ 3 29]]</p>
+                </div>
+            </div>
+            <h2 class="code" style="position: relative;
+            left: 89px;">Visualizing the Training set result</h2>
+            <div class="scroll-block">
+                <p># Import necessary libraries</p>
+
+                <p>import numpy as np</p>
+
+                <p>import matplotlib.pyplot as plt</p>
+
+                <p>from matplotlib.colors import ListedColormap</p>
+
+
+
+                <p># Assuming classifier is your K-NN classifier trained on x_train and y_train</p>
+
+
+
+                <p># Create a meshgrid</p>
+
+                <p> x_set, y_set = x_train, y_train</p>
+
+                <p> x1, x2 = np.meshgrid(np.arange(start=x_set[:, 0].min() - 1, stop=x_set[:, 0].max() + 1, step=0.01),
+
+                    np.arange(start=x_set[:, 1].min() - 1, stop=x_set[:, 1].max() + 1, step=0.01))</p>
+
+
+
+                <p># Plot the decision boundary</p>
+
+                <p> plt.contourf(x1, x2, classifier.predict(np.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+
+                    alpha=0.75, cmap=ListedColormap(('red', 'green')))</p>
+
+
+
+                <p> # Set axis limits</p>
+
+                <p> plt.xlim(x1.min(), x1.max())</p>
+
+                <p>plt.ylim(x2.min(), x2.max())</p>
+
+
+
+                <p> # Scatter plot for each class</p>
+
+                <p> for i, j in enumerate(np.unique(y_set)):</p>
+
+                <p> plt.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+
+                    c=ListedColormap(('red', 'green'))(i), label=str(j))</p>
+
+
+
+                <p># Set plot title and labels</p>
+
+                <p>plt.title('K-NN Algorithm (Training set)')</p>
+
+                <p>plt.xlabel('Age')</p>
+
+                <p>plt.ylabel('Estimated Salary')</p>
+
+                <p> plt.legend()</p>
+
+
+
+                <p> # Display the plot</p>
+
+                <p> plt.show()</p>
+            </div>
+            <img style="position: absolute;
+            width: 319px;
+            left: 744px;
+            top: 9093px;" src="images/ktr.jpeg" alt="">
+            <h2 class="code" style="position: relative;
+            left: 89px;">Visualizing the Test set result</h2>
+            <div class="scroll-block"><p>from matplotlib.colors import ListedColormap</p>
+
+                <p>import matplotlib.pyplot as plt</p>
+
+                <p>import numpy as np</p>
+
+
+
+                <p>x_set, y_set = x_test, y_test</p>
+
+                <p>x1, x2 = np.meshgrid(np.arange(start=x_set[:, 0].min() - 1, stop=x_set[:, 0].max() + 1, step=0.01),
+
+                np.arange(start=x_set[:, 1].min() - 1, stop=x_set[:, 1].max() + 1, step=0.01))</p>
+
+
+
+                <p># Plot the decision boundary</p>
+
+                <p>plt.contourf(x1, x2, classifier.predict(np.array([x1.ravel(), x2.ravel()]).T).reshape(x1.shape),
+
+                alpha=0.75, cmap=ListedColormap(('red', 'green')))</p>
+
+
+
+                <p># Set axis limits</p>
+
+               <p> plt.xlim(x1.min(), x1.max())</p>
+
+               <p> plt.ylim(x2.min(), x2.max())</p>
+
+
+
+               <p> # Scatter plot for each class</p>
+
+               <p> for i, j in enumerate(np.unique(y_set)):</p>
+
+                <p>plt.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1],
+
+                c=ListedColormap(('red', 'green'))(i), label=str(j))</p>
+
+
+
+               <p> # Set plot title and labels</p>
+
+               <p> plt.title('K-NN algorithm (Test set)')</p>
+
+               <p> plt.xlabel('Age')</p>
+
+                <p>plt.ylabel('Estimated Salary')</p>
+
+               <p> plt.legend()</p>
+
+
+
+               <p> # Display the plot</p>
+
+               <p> plt.show()</p> </div>
+            <img style="position: absolute;
+            width: 319px;
+            left: 1084px;
+            top: 9093px;" src="images/kt.jpeg" alt=""></br>
+            <div class="classificationappli" id="classificationappli">
+                <h3>APPLICATIONS</h3>
+                <p>Classification is a fundamental concept applied across various domains, facilitating decision-making and pattern recognition. </p>
+
+<p>Medical Diagnosis: Classifying diseases based on symptoms for accurate treatment planning.</p>
+<p>Spam Filtering: Identifying and segregating spam emails from legitimate ones.</p>
+<p>Sentiment Analysis: Categorizing opinions expressed in text as positive, negative, or neutral.</p>
+<p>Credit Scoring: Assessing the creditworthiness of individuals based on various factors.</p>
+<p>Image Recognition: Recognizing objects or patterns within images for applications like facial recognition or object detection.</p>
+<p>Fraud Detection: Identifying fraudulent activities in financial transactions or insurance claims.</p>
+<p>Recommendation Systems: Recommending products or content based on user preferences and behavior.</p>
+<p>Language Identification: Determining the language of a given text or speech sample.</p>
+<p>Customer Segmentation: Grouping customers based on similarities for targeted marketing strategies.</p>
+<p>Stock Market Prediction: Predicting the movement of stocks based on historical data and market trends.</p>
+            </div>
+        </div>
+</body>
+
+</html>

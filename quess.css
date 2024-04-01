@@ -1,0 +1,211 @@
+.questions{
+    width: 834px;
+    height: 364px;
+    text-align: justify;
+        background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+        color: rgb(28, 172, 205);
+        border-radius: 46px;
+        margin:20px auto;
+      padding: 24px;
+     
+      box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+li a{
+    color:#43ccc0;
+    font-size: 18px;
+    
+}
+ol{
+    position: relative;
+    left: -195px;
+}
+.one{
+    width: 663px;
+    height: 410px;
+    text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 32px;
+      
+      padding: 24px;
+   
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#two{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height: 161px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#three{
+    width: 663px;
+    height: 296px;
+    text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 32px;
+      
+      padding: 24px;
+   
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#four{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height: 496px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#five{
+    width: 663px;
+    height: 378px;
+    text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 32px;
+      
+      padding: 24px;
+   
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#six{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height: 426px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#sev{
+    width: 663px;
+  height: 355px;
+  text-align: justify;
+  background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+  color: rgb(28, 172, 205);
+  border-radius: 32px;
+  padding: 24px;
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#eig{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height: 346px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#nin{
+    width: 663px;
+  height: 355px;
+  text-align: justify;
+  background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+  color: rgb(28, 172, 205);
+  border-radius: 32px;
+  padding: 24px;
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#ten{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height: 574px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#ele{
+    width: 663px;
+  height: 568px;
+  text-align: justify;
+  background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+  color: rgb(28, 172, 205);
+  border-radius: 32px;
+  padding: 24px;
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#twe{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height: 574px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#thir{
+    
+    width: 742px;
+    height: 320px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#fourtheen{
+    position: relative;
+    left: 410px;
+    width: 742px;
+    height: 414px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#fiftheen{
+    
+    width: 742px;
+    height: 370px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 32px;
+    margin: 9px;
+    padding: 11px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}

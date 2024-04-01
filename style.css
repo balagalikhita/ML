@@ -1,0 +1,366 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing:border-box;
+    list-style: none;
+    font-family: 'Poppins',sans-serif;
+}
+.main
+{
+    /* width:100%; */
+    height:100vh;
+    display:flex;
+    /* text-align:center; */
+}
+
+.menu
+{
+  width: 14%;
+    height: 100vh;
+    background-color: #121227;
+    overflow-y: auto; /* Allow vertical scrolling */
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+#logo
+{
+    color:#fff;
+    font-size:30px;
+    letter-spacing: 4px;
+    padding:15px;
+    background-color: black;
+}
+.menu a{
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    letter-spacing: 2px;
+    display:list-item;
+    padding:20px;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+.menu a:hover{
+    background-color: red;
+    transition:0.5s;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.sidebody{
+    margin: 2px;
+    padding:7px;
+    padding-left: 15%;
+}
+
+li a:hover{
+  color:red;
+}
+/*.body h1{
+     margin-top:250px;
+     color:#fff;
+     letter-spacing: 4px;
+     padding:20px;
+     background-color: #000;
+} */
+#title{
+    font-family: 'Poppins',sans-serif;
+     text-align: center;
+    font-size: 38px;
+    color: rgb(8, 10, 102);
+    text-shadow: 2px 2px 4px #000000;
+   
+
+}
+#subtitle{
+    font-size: 15px;
+  text-align: left;
+}
+#intromatter{
+    font-size: 15px;
+    color:black;
+    text-align: left;
+}
+#supervise{
+    width: 834px;
+  height: 316px;
+  text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 46px;
+    margin: 8px;
+    padding: 2px;
+   
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+    position: absolute;
+  top: 1286px;
+}
+h3{
+    color: rgb(28, 172, 205);
+    text-align: center;
+}
+#unsupervise{
+    width: 861px;
+  height: 246px;
+  text-align: justify;
+        background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+        color: rgb(28, 172, 205);
+        border-radius: 46px;
+      margin: 8px;
+      padding: 2px;
+     
+      box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+      position: absolute;
+      top: 1700px
+}
+#applications{
+    width: 398px;
+    height: 248px;
+    text-align: justify;
+          background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+          color: rgb(28, 172, 205);
+          border-radius: 46px;
+        margin: 8px;
+        padding: 2px;
+       
+        box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+        position: absolute;
+        top: 1891px;
+        right: 20px
+}
+
+
+#lo{
+    width: 51px;
+  border-radius: 32px;
+  position: fixed;
+  left: 171px;
+}
+#i1{
+  width: 605px;
+  height: 254px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+  border-radius: 46px;
+  margin: 8px;
+  padding: 9px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+}
+#i2{
+  width: 592px;
+  height: 180px;
+  text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 46px;
+  margin: 8px;
+  padding: 5px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+  position: absolute;
+  top: 425px;
+  right: 11px;
+}
+span{
+    color:rgb(38, 114, 176);
+}
+#i3{
+    width: 822px;
+    height: 420px;
+    text-align: justify;
+      background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+      color: rgb(28, 172, 205);
+      border-radius: 46px;
+    margin: 8px;
+    padding: 2px;
+   
+    box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+    position: absolute;
+  top: 658px;
+}
+#i4{
+    width: 432px;
+    height: 170px;
+    text-align: justify;
+    background-image: linear-gradient(rgb(7, 23, 72),rgb(179, 43, 194));
+    color: rgb(28, 172, 205);
+    border-radius: 46px;
+  margin: 8px;
+  padding: 2px;
+ 
+  box-shadow: rgb(33, 242, 242) 0px 4px 12px;
+  position: absolute;
+  top: 1094px;
+  right: 113px;
+}
+li a{
+    color:black;
+    text-align: center;
+    position: relative;
+  left: 348px;
+}
+#sp{
+    position: absolute;
+  border-radius: 50px;
+  right: 55px;
+  top: 1327px;
+  height: 239px;
+}
+#usp{
+  position: absolute;
+  border-radius: 50px;
+  left: 405px;
+  top: 1995px;
+  height: 212px;
+}
+#men{
+  height: 136px;
+  top: 254px;
+  position: absolute;
+  right: 229px;
+}
+.code {
+  color: #090227;
+  margin: 0px auto;
+  position: relative;
+  left: 408px;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 27%;
+    max-width: none
+  }
+  .sidebody{
+    position: relative;
+    left: 97px;
+    width: 88%;
+}
+#i1{
+  width: 88%;
+    font-size: 13px;
+}
+#i2{
+  width: 78%;
+  font-size: 13px;
+  top: 466px;
+}
+#i3{
+  width: 78%;
+  font-size: 13px;
+}
+#supervise{
+  width: 78%;
+  font-size: 13px;
+}
+#men{
+  display: none;
+}
+#unsupervise{
+  width: 78%;
+  font-size: 13px;
+}
+#sp{
+  display: none;
+}
+#usp{
+  display: none;
+}
+
+}
+@media screen and (max-width: 345px){
+  body {
+    overflow-x: hidden;
+  }
+  .sidebar {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: #01010a;
+    position: fixed;
+    top: -100%; /* Initially hidden off-screen */
+    transition: top 0.3s ease; /* Add a smooth transition */
+    z-index: 1000; /* Ensure the sidebar is above other content */
+    overflow-y: auto; /* Allow vertical scrolling if content exceeds height */
+}
+
+.menu-icon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1001; /* Ensure the menu icon is above the sidebar */
+    color: white /* Adjust icon color as needed */
+}
+
+.show-sidebar {
+    top: 0; /* Show sidebar by moving it to the top */
+}
+
+  .menu {
+    padding-top: 50px; /* Adjust to accommodate the menu icon */
+    height: 0px;
+}
+#lo{
+  left: 61px;
+}
+.sidebody {
+  width: 100%; /* Full width */
+  padding: 10px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+#subtitle{
+  text-align: justify;
+  position: relative;
+  width: 88%;
+  left: -69px;
+}
+li a{
+  left: 112px;
+}
+#i1{
+  left: -96px;
+    position: relative;
+    width: 96%;
+    height: 383px;
+}
+#i2{ position: relative;
+  left: -96px;
+  width: 96%;
+  height: 220px;
+  top: 778px;
+}
+#i3{ position: relative;
+  left: -96px;
+    width: 96%;
+    height: 609px;
+    top: 778px;
+}
+#i4{ position: relative;
+  left: -96px;
+    width: 96%;
+    height: 129px;
+    top: 1401px;
+}
+#supervise{ position: relative;
+  left:-96px;
+  top: 1547px;
+  width: 96%;
+  height: 403px;
+}
+#unsupervise{ position: relative;
+  left: -96px;
+    top: 1964px;
+    width: 96%;
+    height: 313px;
+}
+#applications{ position: relative;
+  left: -96px;
+  top: 2296px;
+    width: 96%;
+    height: 245px;
+}
+#title{
+  text-align: left;
+}
+}
